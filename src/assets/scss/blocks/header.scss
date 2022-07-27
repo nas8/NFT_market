@@ -1,0 +1,20 @@
+header {
+    height: 117px;
+    width: 100%;
+}
+
+.top-bar {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__list {
+    display: flex;
+    flex-direction: row;
+    color: $grayText;
+    gap: 64px;
+}
+

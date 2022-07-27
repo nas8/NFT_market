@@ -1,7 +1,7 @@
 {
     "name": "nft_market",
     "version": "1.0.0",
-    "description": "nas8",
+    "description": "nft_market",
     "author": "nas8",
     "devDependencies": {
         "@babel/core": "^7.18.9",

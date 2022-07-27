@@ -1,5 +1,19 @@
+@import "vars";
+@import "vendor/reset.scss";
+
 body {
-    background-color: rgb(0, 0, 0);
-    font-size: 21px;
-    color: white;
+    background-color: #060714;
+    font-size: 16px;
+    color: $white;
+    font-family: $fontSora;
+    max-width: 1920px;
 }
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+//blocks
+@import "blocks/header.scss"

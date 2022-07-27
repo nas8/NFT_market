@@ -53,8 +53,11 @@ const path = {
 
 function serve() {
     browserSync.init({
+        ui: {
+            port: 8080,
+        },
         server: {
-            baseDir: "./" + distPath
+            baseDir: "./" + distPath,
         }
     });
 }
