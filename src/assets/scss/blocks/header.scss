@@ -11,10 +11,43 @@ header {
     align-items: center;
 }
 
+.top-bar__logo {
+    margin-left: 48px;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    text-decoration: none;
+}
+
+.logo__name{
+    margin-left: 17.55px;
+    color: #E2E2ED;
+    font-size: 25px;
+}
+
 .nav__list {
     display: flex;
     flex-direction: row;
-    color: $grayText;
-    gap: 64px;
+    justify-content: space-between;
+    width: 523px;
+}
+
+.nav__link {
+    text-decoration: none;
+    color: $grey;
+
+    transition: color 0.1s linear;
+}
+
+.nav__link:hover {
+    color: $white;
+}
+
+.top-bar__right-btns {
+    margin-right: 39px;
 }
 

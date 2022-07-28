@@ -124,7 +124,7 @@ html {
  * Address `outline` inconsistency between Chrome and other browsers.
  */
 a:focus {
-  outline: thin dotted;
+  outline: none;
 }
 
 /**
@@ -347,6 +347,7 @@ body {
   color: white;
   font-family: "Sora", sans-serif;
   max-width: 1920px;
+  margin: 0 auto;
 }
 
 *,
@@ -368,9 +369,89 @@ header {
   align-items: center;
 }
 
+.top-bar__logo {
+  margin-left: 48px;
+}
+
+.logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-decoration: none;
+}
+
+.logo__name {
+  margin-left: 17.55px;
+  color: #E2E2ED;
+  font-size: 25px;
+}
+
 .nav__list {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  width: 523px;
+}
+
+.nav__link {
+  text-decoration: none;
   color: #7780A1;
-  gap: 64px;
+  transition: color 0.1s linear;
+}
+
+.nav__link:hover {
+  color: white;
+}
+
+.top-bar__right-btns {
+  margin-right: 39px;
+}
+
+.btn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 24px;
+  width: 146px;
+  height: 52px;
+  border-radius: 12px;
+  text-decoration: none;
+  color: white;
+}
+
+.btn_blue {
+  background: linear-gradient(104.42deg, #4745D0 0%, #2A27C9 60.23%);
+  box-shadow: inset -4px -4px 4px rgba(0, 0, 0, 0.1), inset 4px 4px 4px rgba(255, 255, 255, 0.1);
+  transition: color 0.1s linear;
+}
+
+.btn_blue:hover {
+  background: linear-gradient(104.42deg, #5250ef 0%, #3430f5 70%);
+}
+
+.btn_transparent {
+  color: #7780A1;
+  border: #7780A1 2px solid;
+  background: none;
+  box-shadow: none;
+  transition: all 0.1s linear;
+}
+
+.btn_transparent:hover {
+  color: white;
+  border: white 2px solid;
+}
+
+.btn_size_s {
+  width: 117px;
+}
+
+.two_buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0px;
+  gap: 16px;
 }

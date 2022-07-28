@@ -1,0 +1,53 @@
+.btn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 24px;
+
+    width: 146px;
+    height: 52px;
+    border-radius: 12px;
+
+    text-decoration: none;
+    color: $white;
+}
+
+.btn_blue {
+    background: linear-gradient(104.42deg, #4745D0 0%, #2A27C9 60.23%);
+    box-shadow: inset -4px -4px 4px rgba(0, 0, 0, 0.1),
+    inset 4px 4px 4px rgba(255, 255, 255, 0.1);
+
+    transition: color 0.1s linear;
+}
+
+.btn_blue:hover {
+    background: linear-gradient(104.42deg, #5250ef 0%, #3430f5 70%);
+}
+
+.btn_transparent {
+    color: $grey;
+    border: $grey 2px solid;
+    background: none;
+    box-shadow: none;
+
+    transition: all 0.1s linear;
+}
+
+.btn_transparent:hover{
+    color: $white;
+    border: $white 2px solid;
+}
+
+.btn_size_s {
+    width: 117px;
+}
+
+.two_buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0px;
+    gap: 16px;
+}
