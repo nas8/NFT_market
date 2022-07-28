@@ -1,6 +1,7 @@
 @import "vars";
 @import "vendor/reset.scss";
 
+
 body {
     background-color: #060714;
     font-size: 16px;
@@ -20,3 +21,6 @@ body {
 //blocks
 @import "blocks/header.scss";
 @import "blocks/buttons.scss";
+@import "blocks/intro.scss";
+@import "media";
+

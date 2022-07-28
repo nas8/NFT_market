@@ -1,0 +1,9 @@
+@media (max-width: 1500px) {
+  /* Intro */
+  .intro__inner {
+    padding-top: 78px;
+  }
+  .intro__search {
+    margin-bottom: 78px;
+  }
+}

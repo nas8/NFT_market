@@ -1,6 +1,8 @@
 header {
     height: 117px;
     width: 100%;
+    position: relative;
+    z-index: 1000;
 }
 
 .top-bar {
