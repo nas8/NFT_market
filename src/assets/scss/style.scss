@@ -18,10 +18,18 @@ body {
     box-sizing: border-box;
 }
 
+.container {
+    width: 100%;
+    max-width: 1416px;
+    margin: 0 auto;
+}
+
 //blocks
 @import "blocks/nft__icon.scss";
 @import "blocks/header.scss";
 @import "blocks/buttons.scss";
 @import "blocks/intro.scss";
+@import "blocks/latest-auct.scss";
+@import "blocks/nft-card.scss";
 @import "media";
 
