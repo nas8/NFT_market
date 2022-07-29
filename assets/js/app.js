@@ -15,7 +15,7 @@
   \********************************/
 /***/ (function() {
 
-eval("const h1 = document.querySelectorAll('h1');\r\nconst maxWidth = 1920;\r\nconst intro = document.querySelector('.intro');\r\nconst introInner = document.querySelector('.intro__inner');\r\nconst introSearch = document.querySelector('.intro__search');\r\n\r\n\r\nif (window.innerWidth >= 1920) {\r\n    h1.forEach( elem => {\r\n        elem.style.fontSize = \"120px\";\r\n    });\r\n} else {\r\n    h1.forEach( elem => {\r\n        elem.style.fontSize = `${window.innerWidth*120/maxWidth}px`\r\n    });\r\n}\r\n\n\n//# sourceURL=webpack://nft_market/./src/assets/js/intro.js?");
+eval("const maxWindowWidth = 1920;\r\nconst introMainText = document.querySelector('.intro__main-text');\r\nconst introNftItems = document.querySelectorAll('.nft');\r\n\r\n//change scale of intro main text\r\nif (window.innerWidth < 1920) {\r\n    introMainText.style.transform = `scale(${window.outerWidth/maxWindowWidth})`;\r\n\r\n    introNftItems.forEach (item => {\r\n        item.style.transform = `scale(${window.outerWidth/maxWindowWidth})`;\r\n    })\r\n}\r\n\r\n\n\n//# sourceURL=webpack://nft_market/./src/assets/js/intro.js?");
 
 /***/ })
 
