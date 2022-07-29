@@ -15,7 +15,17 @@
   \********************************/
 /***/ (function() {
 
-eval("const maxWindowWidth = 1920;\r\nconst introMainText = document.querySelector('.intro__main-text');\r\nconst introNftItems = document.querySelectorAll('.nft');\r\n\r\n//change scale of intro main text\r\nif (window.innerWidth < 1920) {\r\n    introMainText.style.transform = `scale(${window.outerWidth/maxWindowWidth})`;\r\n\r\n    introNftItems.forEach (item => {\r\n        item.style.transform = `scale(${window.outerWidth/maxWindowWidth})`;\r\n    })\r\n}\r\n\r\n\n\n//# sourceURL=webpack://nft_market/./src/assets/js/intro.js?");
+eval("const maxWindowWidth = 1920;\r\nconst intro = document.querySelector('.intro')\r\nconst introMainText = document.querySelector('.intro__main-text');\r\nconst introNftItems = document.querySelectorAll('.nft');\r\nconst introInner = document.querySelector('.intro__inner');\r\n\r\n//change scale of intro main text\r\nif (window.innerWidth < 1920) {\r\n    introMainText.style.transform = `scale(${window.outerWidth/maxWindowWidth})`;\r\n\r\n    introNftItems.forEach (item => {\r\n        item.style.transform = `scale(${window.outerWidth/maxWindowWidth})`;\r\n    })\r\n}\r\n\r\n// console.log(intro.clientHeight)\n\n//# sourceURL=webpack://nft_market/./src/assets/js/intro.js?");
+
+/***/ }),
+
+/***/ "./src/assets/js/latest-auct.js":
+/*!**************************************!*\
+  !*** ./src/assets/js/latest-auct.js ***!
+  \**************************************/
+/***/ (function() {
+
+eval("const latestAuctItems = document.querySelector('.latest-auct__items')\r\n\r\n\n\n//# sourceURL=webpack://nft_market/./src/assets/js/latest-auct.js?");
 
 /***/ })
 
@@ -25,8 +35,9 @@ eval("const maxWindowWidth = 1920;\r\nconst introMainText = document.querySelect
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module can't be inlined because the eval devtool is used.
-/******/ 	var __webpack_exports__ = {};
 /******/ 	__webpack_modules__["./src/assets/js/intro.js"]();
+/******/ 	var __webpack_exports__ = {};
+/******/ 	__webpack_modules__["./src/assets/js/latest-auct.js"]();
 /******/ 	
 /******/ })()
 ;
