@@ -356,6 +356,25 @@ body {
   box-sizing: border-box;
 }
 
+.nft {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.nft .nft__image {
+  display: block;
+  margin-bottom: 8px;
+  border-radius: 20px;
+}
+.nft .nft__price {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #7780A1;
+  line-height: 150%;
+}
+
 header {
   height: 117px;
   width: 100%;
@@ -512,6 +531,9 @@ header {
   max-width: 837px;
   margin-bottom: 47px;
 }
+.intro__main-text h1 {
+  font-size: 120px;
+}
 
 .intro__text-1 {
   display: flex;
@@ -612,6 +634,60 @@ header {
 .intro__logos .intro__logo-item {
   width: 25%;
   padding: 0 55px;
+}
+
+.intro__nft-1 {
+  position: absolute;
+  right: 10%;
+  top: 30%;
+}
+.intro__nft-1 .intro__nft-image {
+  box-shadow: 0px 10px 50px 0px rgba(55, 0, 255, 0.35);
+}
+
+.intro__nft-2 {
+  position: absolute;
+  right: 5%;
+  top: 60%;
+}
+.intro__nft-2 .intro__nft-image {
+  box-shadow: 0px 10px 50px 0px rgba(55, 0, 255, 0.35);
+}
+
+.intro__nft-3 {
+  position: absolute;
+  right: 15.9%;
+  top: 77.6%;
+}
+.intro__nft-3 .intro__nft-image {
+  box-shadow: 0px 10px 50px 0px rgba(55, 0, 255, 0.35);
+}
+
+.intro__nft-4 {
+  position: absolute;
+  left: 15.9%;
+  top: 67.6%;
+}
+.intro__nft-4 .intro__nft-image {
+  box-shadow: 0px 10px 50px 0px rgba(255, 0, 119, 0.35);
+}
+
+.intro__nft-5 {
+  position: absolute;
+  left: 5.9%;
+  top: 27.6%;
+}
+.intro__nft-5 .intro__nft-image {
+  box-shadow: 0px 10px 50px 0px rgba(255, 0, 119, 0.35);
+}
+
+.intro__nft-6 {
+  position: absolute;
+  left: -2%;
+  top: 77.6%;
+}
+.intro__nft-6 .intro__nft-image {
+  box-shadow: 0px 10px 50px 0px rgba(0, 8, 255, 0.35);
 }
 
 @media (max-width: 1500px) {

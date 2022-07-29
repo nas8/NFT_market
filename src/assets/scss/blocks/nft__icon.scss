@@ -1,0 +1,20 @@
+.nft {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .nft__image {
+        display: block;
+        margin-bottom: 8px;
+        border-radius: 20px;
+    }
+
+    .nft__price {
+        font-family: $fontInter;
+        font-weight: 400;
+        font-size: 14px;
+        color: $grey;
+        line-height: 150%;
+    }
+}
