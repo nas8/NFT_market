@@ -20,7 +20,7 @@ body {
 
 .container {
     width: 100%;
-    max-width: 1416px;
+    max-width: 1392px;
     margin: 0 auto;
 }
 
@@ -31,5 +31,6 @@ body {
 @import "blocks/intro.scss";
 @import "blocks/latest-auct.scss";
 @import "blocks/nft-card.scss";
+@import "blocks/get-started.scss";
 @import "media";
 
