@@ -34,6 +34,7 @@
     transition: all 0.1s linear;
 }
 
+
 .btn_transparent:hover{
     color: $white;
     border: $white 2px solid;
@@ -41,6 +42,10 @@
 
 .btn_size_s {
     width: 117px;
+}
+
+.btn_size_l {
+    width: 100%;
 }
 
 .two-btns {
@@ -51,3 +56,4 @@
     padding: 0px;
     gap: 16px;
 }
+

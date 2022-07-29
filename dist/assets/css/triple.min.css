@@ -1,0 +1,10 @@
+.triple__inner {
+  display: flex;
+  width: 100%;
+  height: auto;
+  padding: 150px 0;
+}
+
+.triple__item {
+  width: 33.3333%;
+}

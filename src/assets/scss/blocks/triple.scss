@@ -1,0 +1,81 @@
+.triple__inner {
+    display: flex;
+    width: 100%;
+    height: auto;
+
+    padding: 150px 0;
+}
+
+.triple__item {
+    width: 33.3333%;
+
+    border: 1px solid #262840;
+    border-radius: 20px;
+
+    padding: 40px;
+}
+
+.triple__title {
+    font-family: $fontSora;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: 0.2px;
+
+    margin-bottom: 56px;
+}
+
+.triple__content {
+    display: flex;
+    width: 100%;
+}
+
+.triple__elem {
+    max-width: 212px;
+    height: auto;
+}
+
+.triple__nft-title {
+
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+}
+
+.triple__nft-data {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 16px 0;
+    border-bottom: 1px solid #262840;
+
+    margin-bottom: 12px;
+
+    .triple__nft-time {
+        padding: 0;
+        margin: 0;
+        border: 0;
+    }
+
+    .triple__nft-price {
+        width: 79px;
+        height: 29px;
+
+        font-family: $fontSora;
+        font-size: 13px;
+        line-height: 16px;
+
+        padding: 6px 10px;
+
+    }
+}
+
+.triple__nft-bidding {
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 64px;
+}

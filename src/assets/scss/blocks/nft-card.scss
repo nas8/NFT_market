@@ -25,18 +25,17 @@
     border-radius: 4px;
     border: none;
 
-    line-height: 20px;
     font-weight: 600;
     color: #514CFF;
-
-    text-decoration: none;
-
-    transition: all 0.1s linear;
 }
 
-.nft-card__price:hover {
-    border: 1px solid #fcfcfc;
-    color: #4cedff;
+.nft-card__price_size_s {
+    width: 120px;
+    height: 28px;
+
+    font-size: 13px;
+    line-height: 16px;
+
 }
 
 .nft-card__time {
@@ -77,7 +76,7 @@
         align-items: center;
     }
 
-    .nft-card__text, .nft-card__likes-value {
+    .nft-card__likes-value {
         font-family: $fontInter;
         font-style: normal;
         font-weight: 400;
@@ -90,4 +89,14 @@
     .nft-card__heart-icon {
         margin-right: 8px;
     }
+}
+
+.nft-card__text {
+    font-family: $fontInter;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: 0.2px;
+    color: $grey;
 }
