@@ -4,15 +4,30 @@
     height: auto;
 
     padding: 150px 0;
+    position: relative;
 }
 
 .triple__item {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-between;
+
     width: 33.3333%;
+    height: 841px;
+
+    align-self: flex-end;
 
     border: 1px solid #262840;
     border-radius: 20px;
 
     padding: 40px;
+
+    margin-right: 24px;
+}
+
+.triple__item:last-child {
+    margin-right: 0;
 }
 
 .triple__title {
@@ -22,8 +37,13 @@
     font-size: 32px;
     line-height: 40px;
     letter-spacing: 0.2px;
+}
 
-    margin-bottom: 56px;
+.triple__title_size_s {
+    font-size: 24px;
+    line-height: 125%;
+
+    margin-bottom: 8px;
 }
 
 .triple__content {
@@ -77,5 +97,129 @@
     display: flex;
     justify-content: space-between;
 
-    margin-bottom: 64px;
+    margin-bottom: 58px;
 }
+
+.triple__item_backg_grad {
+    display: flex;
+    flex-direction: column;
+
+    min-height: 862px;
+
+    background: url(../images/triple/background.png) center no-repeat;
+    background-size: 100% 100%;
+
+    border-radius: 0 20px 20px 20px;
+    border: 0;
+
+    position: relative;
+}
+
+.border-left {
+    display: block;
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    border-bottom: 1px solid #262840;
+    border-left: 1px solid #262840;
+
+    border-radius: 0 0 0 20px;
+}
+
+.border-right {
+    display: block;
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+    border-bottom: 1px solid #262840;
+    border-right: 1px solid #262840;
+
+    border-radius: 0 0 20px 0;
+}
+
+.triple__hand-img {
+    display: flex;
+    width: 100%;
+    height: 644px;
+
+    position: absolute;
+    left: 0;
+    top: -75px;
+
+    background: url(../images/triple/silver-hand.png) center no-repeat;
+    background-size: auto;
+}
+
+.triple__subtitle {
+    font-family: $fontInter;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: $grey;
+
+    margin-bottom: 38px;
+}
+
+.triple__description {
+    display: flex;
+    flex-direction: column;
+
+    padding: 40px;
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+
+.triple__list {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-between;
+}
+
+.triple__elem_dir_row {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    max-width: none;
+    flex-direction: row;
+
+    margin-bottom: 16px;
+}
+
+.triple_elem-data {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+
+.triple__icon {
+    display: block;
+    margin-right: 16px;
+    max-width: 120px;
+    max-height: 120px;
+
+    border-radius: 20px;
+}
+
+
+
+.triple__nft-data_item_3 {
+    padding: 8px 0;
+    border-bottom: 0;
+
+}
+
+.triple__nft-bidding_mb_s {
+    margin-bottom: 0px;
+}
+
