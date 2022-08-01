@@ -1,0 +1,47 @@
+.counters {
+    display: flex;
+    justify-content: center;
+}
+.counters__inner {
+    display: flex;
+    width: 920px;
+
+
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 100px 0 150px 0;
+}
+
+.counters__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 0 30px;
+}
+
+.counters__icon {
+    display: block;
+    margin-bottom: 16px;
+}
+
+.counters__value {
+    font-family: $fontSora;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 115%;
+}
+
+.counters__name {
+    font-family: $fontInter;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+
+    color: $grey;
+    letter-spacing: 0.2px;
+}

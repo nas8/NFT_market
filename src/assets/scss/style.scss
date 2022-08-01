@@ -25,7 +25,7 @@ body {
 }
 
 //blocks
-@import "blocks/nft__icon.scss";
+@import "blocks/nft-icon.scss";
 @import "blocks/header.scss";
 @import "blocks/buttons.scss";
 @import "blocks/intro.scss";
@@ -33,6 +33,8 @@ body {
 @import "blocks/nft-card.scss";
 @import "blocks/get-started.scss";
 @import "blocks/triple.scss";
+@import "blocks/popular.scss";
+@import "blocks/counters.scss";
 
 @import "media";
 

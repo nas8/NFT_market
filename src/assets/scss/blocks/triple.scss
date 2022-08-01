@@ -51,53 +51,8 @@
     width: 100%;
 }
 
-.triple__elem {
+.triple__nft-card-slim {
     max-width: 212px;
-    height: auto;
-}
-
-.triple__nft-title {
-
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 20px;
-    letter-spacing: 0.2px;
-}
-
-.triple__nft-data {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    padding: 16px 0;
-    border-bottom: 1px solid #262840;
-
-    margin-bottom: 12px;
-
-    .triple__nft-time {
-        padding: 0;
-        margin: 0;
-        border: 0;
-    }
-
-    .triple__nft-price {
-        width: 79px;
-        height: 29px;
-
-        font-family: $fontSora;
-        font-size: 13px;
-        line-height: 16px;
-
-        padding: 6px 10px;
-
-    }
-}
-
-.triple__nft-bidding {
-    display: flex;
-    justify-content: space-between;
-
-    margin-bottom: 58px;
 }
 
 .triple__item_backg_grad {

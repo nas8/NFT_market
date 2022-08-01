@@ -1,0 +1,57 @@
+.popular__inner {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    padding: 100px 0;
+}
+
+.popular__overtitle {
+    font-family: $fontInter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #7780A1;
+
+    margin-bottom: 16px;
+}
+
+.popular__title {
+    font-family: $fontSora;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 45px;
+
+    margin-bottom: 40px;
+}
+
+.popular__buttons {
+    display: flex;
+    gap: 16px;
+
+    margin-bottom: 72px;
+}
+
+.popular__items {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.popular__item {
+    display: flex;
+    width: 16.66666%;
+
+    padding: 0 12px;
+
+}
+
+

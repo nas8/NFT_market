@@ -100,3 +100,42 @@
     letter-spacing: 0.2px;
     color: $grey;
 }
+
+
+// NFT card slim
+
+.nft-card-slim {
+    width: 100%;
+    height: auto;
+}
+
+.nft-card-slim__title {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+}
+
+.nft-card-slim__data {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 16px 0;
+    border-bottom: 1px solid #262840;
+
+    margin-bottom: 12px;
+
+    .nft-card-slim__time {
+        padding: 0;
+        margin: 0;
+        border: 0;
+    }
+}
+
+.nft-card-slim__bidding {
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 58px;
+}
