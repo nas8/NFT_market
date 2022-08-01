@@ -376,7 +376,7 @@ body {
 
 .container {
     width: 100%;
-    max-width: 1416px;
+    max-width: 1392px;
     margin: 0 auto;
 }
 
@@ -465,6 +465,8 @@ header {
 
 .top-bar__right-btns {
     margin-right: 39px;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
 }
 
 .btn {
@@ -496,19 +498,23 @@ header {
 
 .btn_transparent {
     color: #7780A1;
-    border: #7780A1 2px solid;
+    border: 2px solid #262840;
     background: none;
     box-shadow: none;
     transition: all 0.1s linear;
 }
 
 .btn_transparent:hover {
-    color: white;
-    border: white 2px solid;
+    color: rgb(223, 223, 223);
+    border: rgb(223, 223, 223) 2px solid;
 }
 
 .btn_size_s {
     width: 117px;
+}
+
+.btn_size_l {
+    width: 100%;
 }
 
 .two-btns {
@@ -516,8 +522,6 @@ header {
     display: flex;
     -ms-flex-direction: row;
     flex-direction: row;
-    -ms-flex-pack: end;
-    justify-content: flex-end;
     -ms-flex-align: center;
     align-items: center;
     padding: 0px;
@@ -829,9 +833,13 @@ header {
     flex-direction: column;
     width: 33.3333%;
     padding: 24px;
-    margin: 0 12px;
+    margin-right: 24px;
     border: 1px solid #262840;
     border-radius: 20px;
+}
+
+.latest-auct__item:last-child {
+    margin-right: 0;
 }
 
 .latest-auct__info {
@@ -872,16 +880,15 @@ header {
     background: rgba(81, 76, 255, 0.15);
     border-radius: 4px;
     border: none;
-    line-height: 20px;
     font-weight: 600;
     color: #514CFF;
-    text-decoration: none;
-    transition: all 0.1s linear;
 }
 
-.nft-card__price:hover {
-    border: 1px solid #fcfcfc;
-    color: #4cedff;
+.nft-card__price_size_s {
+    width: 120px;
+    height: 28px;
+    font-size: 13px;
+    line-height: 16px;
 }
 
 .nft-card__time {
@@ -930,7 +937,7 @@ header {
     align-items: center;
 }
 
-.nft-card__reviews .nft-card__text, .nft-card__reviews .nft-card__likes-value {
+.nft-card__reviews .nft-card__likes-value {
     font-family: "Inter", sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -944,10 +951,203 @@ header {
     margin-right: 8px;
 }
 
+.nft-card__text {
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: 0.2px;
+    color: #7780A1;
+}
+
+.get-started__inner {
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.get-started__text {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding: 105px 0;
+    text-align: left;
+}
+
+.get-started__overtitle {
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #7780A1;
+    margin-bottom: 16px;
+}
+
+.get-started__title {
+    font-family: "Sora", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 100%;
+    letter-spacing: 0.2px;
+    color: white;
+    margin-bottom: 32px;
+}
+
+.get-started__subtitle {
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.2px;
+    color: #7780A1;
+    margin-bottom: 48px;
+}
+
+.get-started__btns {
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+}
+
+.triple__inner {
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    height: auto;
+    padding: 150px 0;
+    position: relative;
+}
+
+.triple__item {
+    width: 33.3333%;
+    max-height: 841px;
+    -ms-flex-item-align: end;
+    align-self: flex-end;
+    border: 1px solid #262840;
+    border-radius: 20px;
+    padding: 40px;
+    margin-right: 24px;
+}
+
+.triple__item:last-child {
+    margin-right: 0;
+}
+
+.triple__title {
+    font-family: "Sora", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: 0.2px;
+    margin-bottom: 56px;
+}
+
+.triple__content {
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+}
+
+.triple__elem {
+    max-width: 212px;
+    height: auto;
+}
+
+.triple__nft-title {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+}
+
+.triple__nft-data {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 16px 0;
+    border-bottom: 1px solid #262840;
+    margin-bottom: 12px;
+}
+
+.triple__nft-data .triple__nft-time {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+.triple__nft-data .triple__nft-price {
+    width: 79px;
+    height: 29px;
+    font-family: "Sora", sans-serif;
+    font-size: 13px;
+    line-height: 16px;
+    padding: 6px 10px;
+}
+
+.triple__nft-bidding {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-bottom: 64px;
+}
+
+.triple__item_backg_grad {
+    min-height: 862px;
+    background: url(../images/triple/background.png) center no-repeat;
+    background-size: 100% 100%;
+    border-radius: 0 20px 20px 20px;
+    border: 0;
+    -o-border-image: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 100%), #060714;
+    border-image: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 100%), #060714;
+    border-image-slice: 1;
+    position: relative;
+}
+
+.border-left {
+    display: block;
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    border-bottom: 1px solid #262840;
+    border-left: 1px solid #262840;
+    border-radius: 0 0 0 20px;
+}
+
+.border-right {
+    display: block;
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    border-bottom: 1px solid #262840;
+    border-right: 1px solid #262840;
+    border-radius: 0 0 20px 0;
+}
+
 @media (max-width: 1500px) {
   /* Container */
     .container {
-        max-width: 1200px;
+        max-width: 1170px;
     }
   /* Intro */
     .intro__inner {
