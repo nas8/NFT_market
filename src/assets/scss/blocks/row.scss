@@ -1,0 +1,12 @@
+.row {
+    margin-bottom: 71px;
+}
+
+.row__inner {
+    display: flex;
+    justify-content: space-between;
+
+    overflow: hidden;
+    padding: 20px 0;
+}
+
