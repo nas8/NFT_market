@@ -390,7 +390,9 @@ body {
 header {
   height: 117px;
   width: 100%;
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
   z-index: 1000;
 }
 
@@ -436,9 +438,77 @@ header {
   color: white;
 }
 
-.top-bar__right-btns {
+.top-bar__right {
+  display: flex;
+  align-items: center;
   margin-right: 39px;
+  gap: 16px;
+}
+
+.top-bar__right-btns {
   justify-content: flex-end;
+}
+
+/* Burger
+===================*/
+.burger__container {
+  display: none;
+  width: 55px;
+  height: auto;
+  padding: 10px;
+  border: 2px #7780A1 solid;
+  border-radius: 10px;
+}
+
+.burger {
+  position: relative;
+  width: 30px;
+  height: 20px;
+}
+
+.burger span {
+  position: absolute;
+  background-color: #7780A1;
+  width: 100%;
+  height: 2px;
+  left: 0;
+  top: 9px;
+  transition: all 0.3s ease;
+}
+
+.burger:before,
+.burger:after {
+  content: "";
+  background-color: #7780A1;
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  left: 0;
+  transition: all 0.3s ease;
+}
+
+.burger:before {
+  top: 0;
+}
+
+.burger:after {
+  bottom: 0;
+}
+
+.burger._active span {
+  transform: scale(0) translate(0px, -50%);
+}
+
+.burger._active::before {
+  top: 50%;
+  transform: rotate(-45deg) translate(0px, -50%);
+  background-color: white;
+}
+
+.burger._active::after {
+  bottom: 50%;
+  transform: rotate(45deg) translate(0px, 50%);
+  background-color: white;
 }
 
 .btn {
@@ -507,33 +577,19 @@ header {
 
 .intro {
   width: 100%;
-  height: 85.6vh;
+  height: 100vh;
   max-height: 1191px;
-}
-
-.intro__background {
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: -1;
-  width: 100%;
-  height: 100%;
-  max-height: 1308px;
-}
-
-.intro__background img {
-  display: block;
-  max-width: 100%;
-  height: auto;
+  background: url(../images/intro-background.png) center no-repeat;
+  background-size: cover;
 }
 
 .intro__inner {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   width: 100%;
   height: 100%;
-  padding-top: 182px;
   position: relative;
 }
 
@@ -651,20 +707,26 @@ header {
   justify-content: flex-end;
 }
 
-.intro__logos {
+.intro__partners {
   display: flex;
   flex-direction: row;
   position: absolute;
   bottom: 7%;
 }
-.intro__logos .intro__logo-item {
+
+.intro__partner {
   width: 25%;
   padding: 0 55px;
+  transition: all 0.1s linear;
+}
+
+.intro__partner:hover {
+  transform: scale(1.2);
 }
 
 .intro__nft-1 {
   position: absolute;
-  right: 10%;
+  right: 18%;
   top: 20%;
 }
 .intro__nft-1 .intro__nft-image {
@@ -673,8 +735,8 @@ header {
 
 .intro__nft-2 {
   position: absolute;
-  right: 2%;
-  top: 50%;
+  right: 9%;
+  top: 47%;
 }
 .intro__nft-2 .intro__nft-image {
   box-shadow: 0px 10px 50px 0px rgba(55, 0, 255, 0.35);
@@ -682,8 +744,8 @@ header {
 
 .intro__nft-3 {
   position: absolute;
-  right: 15.9%;
-  top: 57.6%;
+  right: 19%;
+  top: 73%;
 }
 .intro__nft-3 .intro__nft-image {
   box-shadow: 0px 10px 50px 0px rgba(55, 0, 255, 0.35);
@@ -691,8 +753,8 @@ header {
 
 .intro__nft-4 {
   position: absolute;
-  left: 15.9%;
-  top: 47.6%;
+  left: 8%;
+  top: 42%;
 }
 .intro__nft-4 .intro__nft-image {
   box-shadow: 0px 10px 50px 0px rgba(255, 0, 119, 0.35);
@@ -700,7 +762,7 @@ header {
 
 .intro__nft-5 {
   position: absolute;
-  left: 5.9%;
+  left: 19%;
   top: 17.6%;
 }
 .intro__nft-5 .intro__nft-image {
@@ -709,8 +771,8 @@ header {
 
 .intro__nft-6 {
   position: absolute;
-  left: -2%;
-  top: 57.6%;
+  left: 20%;
+  top: 70%;
 }
 .intro__nft-6 .intro__nft-image {
   box-shadow: 0px 10px 50px 0px rgba(0, 8, 255, 0.35);
@@ -1325,6 +1387,10 @@ header {
   padding: 20px 0;
 }
 
+.row__inner .nft {
+  padding: 8px;
+}
+
 .footer__inner {
   width: 100%;
   height: 100%;
@@ -1448,11 +1514,11 @@ header {
     max-width: 1194px;
   }
   /* Intro */
-  .intro__inner {
-    padding-top: 78px;
+  .intro__nft-items {
+    display: none;
   }
-  .intro__search {
-    margin-bottom: 78px;
+  .intro__main-text {
+    transform: scale(0.8);
   }
   /* Get started */
   .get-started__title {
@@ -1468,5 +1534,93 @@ header {
   .triple__title {
     font-size: 24px;
     line-height: 30px;
+  }
+}
+@media (max-width: 1200px) {
+  /* Header */
+  .nav__list {
+    display: none;
+  }
+  .burger__container {
+    display: block;
+    margin-right: 15px;
+  }
+  .top-bar__right {
+    margin-right: 0;
+  }
+  .btn {
+    height: 44px;
+  }
+}
+@media (max-width: 991px) {
+  /* Header */
+  header {
+    height: 70px;
+  }
+  .top-bar__logo {
+    margin-left: 15px;
+  }
+  .nav__list {
+    display: none;
+  }
+  .top-bar__right-btns {
+    display: none;
+  }
+  /* Intro */
+  .intro__main-text {
+    transform: scale(0.6);
+  }
+  .intro__text-1 {
+    margin-right: 0;
+  }
+  .intro__search {
+    transform: scale(0.8);
+    font-size: 20px;
+  }
+  .intro__partner {
+    padding: 0 25px;
+  }
+}
+@media (max-width: 767px) {
+  /* header */
+  .logo__name {
+    display: none;
+  }
+  /* Intro */
+  .intro__main-text {
+    transform: scale(0.55);
+  }
+  .intro__search {
+    transform: scale(0.6);
+  }
+  .intro__partner {
+    padding: 0 5px;
+  }
+  .intro__text-2 {
+    margin-right: 0;
+  }
+}
+@media (max-width: 480px) {
+  .intro__main-text {
+    transform: scale(0.38);
+  }
+  .intro__search {
+    transform: scale(0.4);
+    font-size: 25px;
+  }
+  .intro__search ::placeholder {
+    font-size: 20px;
+  }
+  .intro__partner {
+    padding: 0;
+  }
+  .intro__partner img {
+    height: 25px;
+    width: 65px;
+  }
+}
+@media (max-width: 320px) {
+  .intro__main-text {
+    transform: scale(0.3);
   }
 }
