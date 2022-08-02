@@ -373,7 +373,7 @@ body {
   margin-bottom: 8px;
   border-radius: 20px;
   text-decoration: none;
-  transition: all 0.1s linear;
+  transition: box-shadow 0.1s linear;
 }
 .nft .nft__image:hover {
   transform: scale(1.05);
@@ -1227,7 +1227,7 @@ header {
 .folder__inner {
   display: flex;
   width: 100%;
-  min-height: auto;
+  min-height: 558;
   display: flex;
   background: url(../images/folder/background.png) center no-repeat;
   background-size: 100% 100%;
@@ -1323,6 +1323,123 @@ header {
   justify-content: space-between;
   overflow: hidden;
   padding: 20px 0;
+}
+
+.footer__inner {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  min-height: 397px;
+  border: 1px solid #262840;
+  border-radius: 20px;
+  margin-bottom: 100px;
+}
+
+.footer__text {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.2px;
+  color: #7780A1;
+}
+
+.footer__left,
+.footer__center,
+.footer__right {
+  display: flex;
+  flex-direction: column;
+  width: 33.33333%;
+  height: auto;
+  justify-content: space-between;
+  padding: 48px 48px 43px 48px;
+  border-right: 1px #262840 solid;
+}
+
+.footer__left .footer__links {
+  display: flex;
+  gap: 40px;
+}
+.footer__left .footer__links a {
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: #7780A1;
+  transition: color 0.1s linear;
+}
+.footer__left .footer__links a:hover {
+  color: #ffffff;
+}
+
+.footer__center .footer__nav .nav__list {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 16px;
+}
+.footer__center .footer__social {
+  display: flex;
+  gap: 20px;
+}
+.footer__center .footer__social a {
+  text-decoration: none;
+  transition: all 0.1s linear;
+}
+.footer__center .footer__social a:hover {
+  transform: scale(1.2);
+}
+
+.footer__right {
+  border-right: none;
+}
+.footer__right form {
+  max-width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background: #ffffff;
+  align-self: center;
+  max-width: 367px;
+  max-height: 52px;
+  padding: 16px 32px;
+  border-radius: 16px;
+}
+.footer__right form input {
+  display: flex;
+  width: 60%;
+  outline: none;
+  border: none;
+}
+.footer__right form ::placeholder {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.2px;
+  color: #7780A1;
+  opacity: 0.5;
+}
+.footer__right form button {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: #2A27C9;
+  padding: 0;
+  padding: 5px;
+  min-width: 70px;
+  outline: none;
+  border: none;
+  background: #ffffff;
+  transition: all 0.1s linear;
+}
+.footer__right form button:hover {
+  transform: scale(1.1);
 }
 
 @media (max-width: 1500px) {
