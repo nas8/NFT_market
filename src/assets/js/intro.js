@@ -5,12 +5,25 @@ const introNftItems = document.querySelectorAll('.nft');
 const introInner = document.querySelector('.intro__inner');
 
 //change scale of intro main text
-if (window.innerWidth < 1920) {
-    introMainText.style.transform = `scale(${window.outerWidth/maxWindowWidth})`;
 
-    introNftItems.forEach (item => {
-        item.style.transform = `scale(${window.outerWidth/maxWindowWidth})`;
-    })
-}
+// window.addEventListener('resize', resizeIntro);
+// window.addEventListener('load', resizeIntro);
 
-// console.log(intro.clientHeight)
+// function resizeIntro() {
+//     if (window.innerWidth < maxWindowWidth) {
+//         introMainText.style.transform = `scale(${window.innerWidth/maxWindowWidth})`;
+
+//         introNftItems.forEach (item => {
+//             item.style.transform = `scale(${window.innerWidth/maxWindowWidth})`;
+//         })
+//     }
+// }
+
+
+// else {
+//     introMainText.style.transform = 'scale(1)';
+
+//     introNftItems.forEach (item => {
+//         item.style.transform = 'scale(1)';
+//     })
+// }

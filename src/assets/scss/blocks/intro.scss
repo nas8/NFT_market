@@ -1,34 +1,19 @@
 .intro {
     width: 100%;
-    height: 85.6vh;
+    height: 100vh;
     max-height: 1191px;
-}
 
-.intro__background {
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: -1;
-    width: 100%;
-    height: 100%;
-    max-height: 1308px;
-
-}
-
-.intro__background img{
-    display: block;
-    max-width: 100%;
-    height: auto;
+    background: url(../images/intro-background.png) center no-repeat;
+    background-size: cover;
 }
 
 .intro__inner {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     width: 100%;
     height: 100%;
-
-    padding-top: 182px;
 
     position: relative;
 }
@@ -161,23 +146,27 @@
 }
 
 
-.intro__logos {
+.intro__partners {
     display: flex;
     flex-direction: row;
 
     position: absolute;
     bottom: 7%;
+}
 
+.intro__partner {
+    width: 25%;
+    padding: 0 55px;
+    transition: all 0.1s linear;
+}
 
-    .intro__logo-item {
-        width: 25%;
-        padding: 0 55px;
-    }
+.intro__partner:hover {
+    transform: scale(1.2);
 }
 
 .intro__nft-1 {
     position: absolute;
-    right: 10%;
+    right: 18%;
     top: 20%;
 
     .intro__nft-image {
@@ -187,8 +176,8 @@
 
 .intro__nft-2 {
     position: absolute;
-    right: 2%;
-    top: 50%;
+    right: 9%;
+    top: 47%;
 
     .intro__nft-image {
         box-shadow: 0px 10px 50px 0px rgba(55, 0, 255, 0.35);
@@ -198,8 +187,8 @@
 
 .intro__nft-3 {
     position: absolute;
-    right: 15.9%;
-    top: 57.6%;
+    right: 19%;
+    top: 73%;
 
     .intro__nft-image {
         box-shadow: 0px 10px 50px 0px rgba(55, 0, 255, 0.35);
@@ -208,8 +197,8 @@
 
 .intro__nft-4 {
     position: absolute;
-    left: 15.9%;
-    top: 47.6%;
+    left: 8%;
+    top: 42%;
 
     .intro__nft-image {
         box-shadow: 0px 10px 50px 0px rgba(255, 0, 119, 0.35);
@@ -218,7 +207,7 @@
 
 .intro__nft-5 {
     position: absolute;
-    left: 5.9%;
+    left: 19%;
     top: 17.6%;
 
     .intro__nft-image {
@@ -228,8 +217,8 @@
 
 .intro__nft-6 {
     position: absolute;
-    left: -2%;
-    top: 57.6%;
+    left: 20%;
+    top: 70%;
 
     .intro__nft-image {
         box-shadow: 0px 10px 50px 0px rgba(0, 8, 255, 0.35);

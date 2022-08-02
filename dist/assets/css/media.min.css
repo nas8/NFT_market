@@ -4,11 +4,11 @@
     max-width: 1194px;
   }
   /* Intro */
-  .intro__inner {
-    padding-top: 78px;
+  .intro__nft-items {
+    display: none;
   }
-  .intro__search {
-    margin-bottom: 78px;
+  .intro__main-text {
+    transform: scale(0.8);
   }
   /* Get started */
   .get-started__title {
@@ -24,5 +24,93 @@
   .triple__title {
     font-size: 24px;
     line-height: 30px;
+  }
+}
+@media (max-width: 1200px) {
+  /* Header */
+  .nav__list {
+    display: none;
+  }
+  .burger__container {
+    display: block;
+    margin-right: 15px;
+  }
+  .top-bar__right {
+    margin-right: 0;
+  }
+  .btn {
+    height: 44px;
+  }
+}
+@media (max-width: 991px) {
+  /* Header */
+  header {
+    height: 70px;
+  }
+  .top-bar__logo {
+    margin-left: 15px;
+  }
+  .nav__list {
+    display: none;
+  }
+  .top-bar__right-btns {
+    display: none;
+  }
+  /* Intro */
+  .intro__main-text {
+    transform: scale(0.6);
+  }
+  .intro__text-1 {
+    margin-right: 0;
+  }
+  .intro__search {
+    transform: scale(0.8);
+    font-size: 20px;
+  }
+  .intro__partner {
+    padding: 0 25px;
+  }
+}
+@media (max-width: 767px) {
+  /* header */
+  .logo__name {
+    display: none;
+  }
+  /* Intro */
+  .intro__main-text {
+    transform: scale(0.55);
+  }
+  .intro__search {
+    transform: scale(0.6);
+  }
+  .intro__partner {
+    padding: 0 5px;
+  }
+  .intro__text-2 {
+    margin-right: 0;
+  }
+}
+@media (max-width: 480px) {
+  .intro__main-text {
+    transform: scale(0.38);
+  }
+  .intro__search {
+    transform: scale(0.4);
+    font-size: 25px;
+  }
+  .intro__search ::placeholder {
+    font-size: 20px;
+  }
+  .intro__partner {
+    padding: 0;
+  }
+  .intro__partner img {
+    height: 25px;
+    width: 65px;
+  }
+}
+@media (max-width: 320px) {
+  .intro__main-text {
+    transform: scale(0.3);
   }
 }
