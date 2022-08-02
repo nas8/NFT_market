@@ -1,0 +1,148 @@
+.footer__inner {
+    width: 100%;
+    height: 100%;
+    display: flex;
+
+    min-height: 397px;
+
+    border: 1px solid #262840;
+    border-radius: 20px;
+
+    margin-bottom: 100px;
+}
+
+.footer__text {
+    font-family: $fontInter;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+
+    letter-spacing: 0.2px;
+    color: #7780A1;
+}
+
+.footer__left,
+.footer__center,
+.footer__right {
+    display: flex;
+    flex-direction: column;
+    width: 33.33333%;
+    height: auto;
+    justify-content: space-between;
+
+    padding: 48px 48px 43px 48px;
+    border-right: 1px #262840 solid;
+}
+
+.footer__left {
+    .footer__links {
+        display: flex;
+        gap: 40px;
+
+        a {
+            text-decoration: none;
+
+            font-family: $fontInter;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 150%;
+
+            color: #7780A1;
+
+            transition: color 0.1s linear;
+        }
+
+        a:hover {
+            color: #ffffff;
+        }
+    }
+}
+
+.footer__center {
+    .footer__nav {
+        .nav__list {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+
+            gap: 16px;
+        }
+
+    }
+
+    .footer__social {
+        display: flex;
+        gap: 20px;
+
+        a {
+            text-decoration: none;
+            transition: all 0.1s linear;
+        }
+
+        a:hover {
+            transform: scale(1.2);
+        }
+    }
+}
+
+.footer__right {
+    border-right: none;
+
+    form {
+        max-width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        background: #ffffff;
+        align-self: center;
+
+        max-width: 367px;
+        max-height: 52px;
+
+        padding: 16px 32px;
+        border-radius: 16px;
+
+        input {
+            display: flex;
+            width: 60%;
+            outline: none;
+            border: none;
+        }
+
+        ::placeholder {
+            font-family: $fontInter;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
+            letter-spacing: 0.2px;
+
+            color: #7780A1;
+            opacity: 0.5;
+        }
+
+        button {
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 20px;
+            color: #2A27C9;
+            padding: 0;
+
+            padding: 5px;
+            min-width: 70px;
+            outline: none;
+            border: none;
+            background: #ffffff;
+
+            transition: all 0.1s linear;
+        }
+
+        button:hover {
+            transform: scale(1.1);
+        }
+    }
+}
+
