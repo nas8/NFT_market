@@ -17,6 +17,7 @@
     /* Latest auctions */
     .latest-auct__title {
         margin-bottom: 50px;
+        text-align: center;
     }
 
     .latest-auct {
@@ -62,6 +63,10 @@
         .nft-card-slim__title{
             font-weight: 400;
         }
+
+        .triple__description {
+            padding: 30px;
+        }
     }
 
     .triple__title {
@@ -103,7 +108,7 @@
         max-width: 484px;
     }
 
-     /* Triple # 1*/
+     /* Triple #1 */
 
     .triple__elem {
         flex-direction: column;
@@ -122,6 +127,54 @@
 
     .triple__nft-bidding_mb_s {
         display: none;
+    }
+
+    /* Popular */
+
+    .popular__items {
+        flex-wrap: wrap;
+        padding: 0 50px;
+
+        .popular__item {
+            width: 33.33333%;
+            margin-bottom: 24px;
+
+            .nft-card-slim__title {
+                font-size: 16px;
+                font-weight: 400;
+            }
+        }
+    }
+
+    /* Folder */
+    .folder__inner {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+
+    .folder__left {
+        width: 100%;
+
+    }
+
+    .folder__right {
+        display: none;
+    }
+
+    /* Footer */
+    %footer-shared {
+        padding: 30px;
+    }
+
+    .footer__text {
+        font-size: 14px;
+    }
+
+    .footer__left {
+        .footer__links {
+            flex-direction: column;
+        }
+
     }
 }
 
@@ -252,11 +305,90 @@
 
     }
 
+    /* Popular */
+    .popular__items {
+        .popular__item {
+            width: 33.33333%;
+            margin-bottom: 24px;
+
+            .nft-card-slim__title {
+                font-size: 14px;
+            }
+        }
+    }
+
+    /* Counters */
+    .counters__inner {
+        flex-wrap: wrap;
+    }
+    .counters__item {
+        width: 50%;
+        margin-bottom: 50px;
+    }
+
+    .counters__item:nth-child(3),.counters__item:nth-child(4) {
+        margin-bottom: 0;
+    }
+
+    /* Footer */
+    .footer__inner {
+        flex-direction: column;
+        padding: 20px 40px;
+
+        %footer-shared {
+            width: 100%;
+            padding: 20px 0;
+            border-right: 0;
+        }
+
+        .footer__left {
+            border-bottom: 1px #262840 solid;
+
+            .footer__logo,
+            .footer__text,
+            .footer__links  {
+                margin-bottom: 24px;
+            }
+
+            .footer__links {
+                max-width: 320px;
+                flex-direction: row;
+            }
+
+
+        }
+
+        .footer__center {
+            border-bottom: 1px #262840 solid;
+
+            .nav__list,
+            .btn,
+            .footer__social {
+                margin-bottom: 24px;
+            }
+
+        }
+
+        .footer__right {
+            .footer__text {
+                margin-bottom: 24px;
+            }
+
+            form {
+                max-width: 500px;
+            }
+
+        }
+
+    }
+
+
+
 }
 
 @media (max-width: 767px) {
     /* header */
-    .logo__name {
+    header .logo__name {
         display: none;
     }
 
@@ -291,6 +423,9 @@
     }
 
     /* Get-Started #1 */
+    .get-started__title {
+        font-size: 28px;
+    }
 
     .get-started__img {
         display: none;
@@ -351,7 +486,29 @@
         }
     }
 
+    /* Get-Started #2 */
+    .get-started__elem {
+        align-items: center;
+        margin-right: 40px;
+    }
 
+    .get-started__elem:last-child {
+        margin-right: 0;
+    }
+
+    .get-started__name {
+        margin-bottom: 10px;
+    }
+
+    .popular__items {
+        .popular__item {
+            width: 50%;
+
+            .nft-card-slim__title {
+                font-size: 16px;
+            }
+        }
+    }
 
 }
 
@@ -375,11 +532,24 @@
             }
         }
     }
+
+    /* Popular */
+
+    .popular__items {
+        .popular__item {
+            width: 100%;
+            margin-bottom: 50px;
+        }
+
+        .popular__item:last-child {
+            margin-bottom: 0;
+        }
+    }
+
 }
 
 @media (max-width: 480px) {
     /* Intro # 1*/
-
     .intro__main-text {
         transform: scale(0.38);
     }
@@ -402,7 +572,7 @@
         }
     }
 
-    /* Get-Started # 1*/
+    /* Get-Started #1 */
     .get-started__text {
         .get-started__btns {
             gap: 16px;
@@ -411,7 +581,6 @@
     }
 
     /* Triple */
-
     .triple__inner {
         padding: 50px 0;
 
@@ -454,7 +623,25 @@
         }
     }
 
+    /* Popular */
+    .popular__items {
+        padding: 30px;
+    }
 
+    /* Counters */
+    .counters__value {
+        font-size: 24px;
+    }
+
+    /* Folder */
+    .folder__inner {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .folder__title {
+        font-size: 22px;
+    }
 }
 
 @media (max-width: 320px) {

@@ -15,7 +15,7 @@
     overflow: hidden;
 }
 
-.folder__right {
+.folder__left {
     display: flex;
     flex-direction: column;
     width: 50%;
@@ -61,7 +61,7 @@
     margin-bottom: 48px;
 }
 
-.folder__left {
+.folder__right {
     display: flex;
     position: relative;
     width: 50%;

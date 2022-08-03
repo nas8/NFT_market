@@ -31,10 +31,14 @@
     line-height: 45px;
 
     margin-bottom: 40px;
+    text-align: center;
 }
 
 .popular__buttons {
     display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
     gap: 16px;
 
     margin-bottom: 72px;
@@ -51,6 +55,7 @@
 .popular__item {
     display: flex;
     width: 16.66666%;
+    height: auto;
 
     padding: 0 12px;
 
