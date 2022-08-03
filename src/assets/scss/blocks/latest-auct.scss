@@ -5,7 +5,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
     padding: 65px 0 100px;
 }
 
@@ -20,11 +19,15 @@
 .latest-auct__items {
     display: flex;
     width: 100%;
+    height: auto;
 }
 
 .latest-auct__item {
+    max-width: 448px;
+
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     width: 33.3333%;
     padding: 24px;
 
