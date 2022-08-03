@@ -27,6 +27,16 @@ eval("const maxWindowWidth = 1920;\r\nconst intro = document.querySelector('.int
 
 eval("const latestAuctItems = document.querySelector('.latest-auct__items')\r\n\r\n\n\n//# sourceURL=webpack://nft_market/./src/assets/js/latest-auct.js?");
 
+/***/ }),
+
+/***/ "./src/assets/js/triple.js":
+/*!*********************************!*\
+  !*** ./src/assets/js/triple.js ***!
+  \*********************************/
+/***/ (function() {
+
+eval("const tripleItem = document.querySelector('.triple__item');\r\nconst tripleItemCenter = document.querySelector('.triple__item_backg_grad');\r\n\r\ntripleItemCenter.style.height = `${tripleItem.clientHeight + 21}px`;\r\n\r\nwindow.addEventListener('resize', () => {\r\n    tripleItemCenter.style.height = `${tripleItem.clientHeight + 21}px`;\r\n})\r\n\r\n\n\n//# sourceURL=webpack://nft_market/./src/assets/js/triple.js?");
+
 /***/ })
 
 /******/ 	});
@@ -36,8 +46,9 @@ eval("const latestAuctItems = document.querySelector('.latest-auct__items')\r\n\
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module can't be inlined because the eval devtool is used.
 /******/ 	__webpack_modules__["./src/assets/js/intro.js"]();
-/******/ 	var __webpack_exports__ = {};
 /******/ 	__webpack_modules__["./src/assets/js/latest-auct.js"]();
+/******/ 	var __webpack_exports__ = {};
+/******/ 	__webpack_modules__["./src/assets/js/triple.js"]();
 /******/ 	
 /******/ })()
 ;

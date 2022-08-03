@@ -10,7 +10,26 @@
   .intro__main-text {
     transform: scale(0.8);
   }
+  /* Latest auctions */
+  .latest-auct__title {
+    margin-bottom: 50px;
+  }
+  .latest-auct .nft-card__title {
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .latest-auct .nft-card__text {
+    display: none;
+  }
+  .latest-auct .latest-auct__text {
+    margin-top: 15px;
+    display: flex;
+    align-self: center;
+  }
   /* Get started */
+  .get-started__inner {
+    padding: 0 25px;
+  }
   .get-started__title {
     font-size: 36px;
   }
@@ -21,9 +40,21 @@
     font-size: 12px;
   }
   /* Triple */
+  .triple__item {
+    height: 741px;
+    padding: 30px;
+  }
+  .triple__item .nft-card-slim__title {
+    font-weight: 400;
+  }
   .triple__title {
     font-size: 24px;
     line-height: 30px;
+  }
+  .triple__icon {
+    width: 60px;
+    height: 60px;
+    margin-top: 2%;
   }
 }
 @media (max-width: 1200px) {
@@ -40,6 +71,26 @@
   }
   .btn {
     height: 44px;
+  }
+  /* Get-Started # 1*/
+  .get-started__img {
+    max-width: 484px;
+  }
+  /* Triple # 1*/
+  .triple__elem {
+    flex-direction: column;
+    max-height: 160px;
+  }
+  .triple__elem .triple__icon {
+    margin-bottom: 15px;
+    width: 80px;
+    height: 80px;
+  }
+  .triple__elem:last-child {
+    display: none;
+  }
+  .triple__nft-bidding_mb_s {
+    display: none;
   }
 }
 @media (max-width: 991px) {
@@ -70,6 +121,74 @@
   .intro__partner {
     padding: 0 25px;
   }
+  /* Latest auctions */
+  .latest-auct__item .latest-auct__info {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .latest-auct__item .nft-card__title {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .latest-auct__item .nft-card__time {
+    justify-content: center;
+    align-items: center;
+  }
+  .latest-auct__item .nft-card__reviews {
+    flex-direction: column;
+  }
+  .latest-auct__item .nft-card__avatars {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  /* Get-Started # 1*/
+  .get-started__img {
+    max-width: 384px;
+  }
+  /* Triple */
+  .triple__inner {
+    padding: 50px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .triple__inner .triple__title {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .triple__inner .triple__item {
+    width: 48%;
+    margin-bottom: 24px;
+  }
+  .triple__inner .triple__item:nth-child(2) {
+    margin-right: 0;
+  }
+  .triple__inner .triple__item:nth-child(3) {
+    width: 100%;
+  }
+  .triple__inner .triple__hand-img {
+    top: -6%;
+  }
+  .triple__inner .triple__elem:last-child {
+    display: flex;
+  }
+  .triple__inner .triple__elem {
+    flex-direction: row;
+    max-height: 120px;
+    align-items: center;
+  }
+  .triple__inner .triple__elem .nft-card-slim__title {
+    font-size: 16px;
+  }
+  .triple__inner .triple__elem .triple__icon {
+    width: 120px;
+    height: 120px;
+    margin-right: 24px;
+    margin-top: 0;
+  }
+  .triple__inner .triple__elem .triple__nft-bidding_mb_s {
+    display: flex;
+  }
 }
 @media (max-width: 767px) {
   /* header */
@@ -89,8 +208,76 @@
   .intro__text-2 {
     margin-right: 0;
   }
+  /* Latest auctions */
+  .latest-auct__items {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .latest-auct__item {
+    width: 100%;
+    align-items: center;
+    margin-right: 0;
+    margin-bottom: 24px;
+  }
+  /* Get-Started #1 */
+  .get-started__img {
+    display: none;
+  }
+  .get-started__text {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    padding: 20px 0;
+  }
+  .get-started__text .get-started__img_disp_none {
+    display: block;
+    margin-bottom: 50px;
+    max-width: 384px;
+    width: 100%;
+    height: auto;
+  }
+  .get-started__text .get-started__btns {
+    gap: 40px;
+  }
+  /* Triple */
+  .triple__inner .triple__item {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 60px;
+  }
+  .triple__inner .triple__item_backg_grad {
+    justify-items: center;
+  }
+  .triple__inner .triple__hand-img {
+    max-width: 360px;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .triple__inner .triple__item:last-child {
+    margin-bottom: 0;
+  }
+  .triple__inner .btn {
+    width: 100%;
+  }
+  .triple__inner .triple__description {
+    width: 100%;
+  }
+}
+@media (max-width: 600px) {
+  .triple__inner .triple__item .nft-card-slim__title {
+    font-size: 12px;
+  }
+  .triple__inner .triple__elem .triple__icon {
+    width: 80px;
+    height: 80px;
+  }
+  .triple__inner .triple__elem .nft-card-slim__bidding {
+    display: none;
+  }
 }
 @media (max-width: 480px) {
+  /* Intro # 1*/
   .intro__main-text {
     transform: scale(0.38);
   }
@@ -107,6 +294,44 @@
   .intro__partner img {
     height: 25px;
     width: 65px;
+  }
+  /* Get-Started # 1*/
+  .get-started__text .get-started__btns {
+    gap: 16px;
+    flex-direction: column;
+  }
+  /* Triple */
+  .triple__inner {
+    padding: 50px 0;
+  }
+  .triple__inner .triple__item {
+    text-align: center;
+    height: auto;
+  }
+  .triple__inner .triple__item .triple__title {
+    margin-bottom: 24px;
+  }
+  .triple__inner .triple__item .nft-card-slim__bidding {
+    margin-bottom: 24px;
+  }
+  .triple__inner .triple__elem {
+    flex-direction: column;
+    max-height: 160px;
+  }
+  .triple__inner .triple__elem .triple__icon {
+    align-self: flex-start;
+    width: 70px;
+    height: 70px;
+    margin-right: 10px;
+  }
+  .triple__inner .triple__elem .nft-card-slim__title {
+    text-align: left;
+  }
+  .triple__inner .triple__hand-img {
+    max-width: 200px;
+  }
+  .triple__inner .triple__elem:last-child {
+    display: none;
   }
 }
 @media (max-width: 320px) {
