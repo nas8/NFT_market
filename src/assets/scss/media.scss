@@ -6,12 +6,45 @@
     }
 
     /* Intro */
-    .intro__nft-items {
-        display: none;
-    }
-
     .intro__main-text {
         transform: scale(0.8);
+    }
+
+    .intro__nft-items {
+        .nft {
+            transform: scale(0.8);
+        }
+
+        .intro__nft-1 {
+            right: 15%;
+            top: 22%;
+        }
+
+        .intro__nft-2 {
+            right: 3%;
+            top: 38%;
+        }
+
+
+        .intro__nft-3 {
+            right: 10%;
+            top: 52%;
+        }
+
+        .intro__nft-4 {
+            left: 7%;
+            top: 35%;
+        }
+
+        .intro__nft-5 {
+            left: 13%;
+            top: 17.6%;
+        }
+
+        .intro__nft-6 {
+            left: 16%;
+            top: 53%;
+        }
     }
 
     /* Latest auctions */
@@ -91,7 +124,7 @@
 
     .burger__container {
         display: block;
-        margin-right: 15px;
+        margin-right: 48px;
     }
 
     .top-bar__right {
@@ -180,7 +213,7 @@
 
 @media (max-width: 991px) {
     /* Header */
-    header {
+    .top-bar {
         height: 70px;
     }
 
@@ -194,6 +227,19 @@
 
     .top-bar__right-btns {
         display: none;
+    }
+
+    .burger__container {
+        display: block;
+        width: auto;
+        padding: 0;
+        margin-right: 15px;
+        border-radius: 7px;
+        border: 0;
+
+        .burger {
+            margin-right: 0;
+        }
     }
 
      /* Intro */
@@ -212,6 +258,10 @@
 
     .intro__partner {
         padding: 0 25px;
+    }
+
+    .intro__nft-items {
+        display: none;
     }
 
     /* Latest auctions */
@@ -330,10 +380,17 @@
         margin-bottom: 0;
     }
 
+    /* Folder */
+    .folder {
+        margin-bottom: 70px;
+    }
+
+
     /* Footer */
     .footer__inner {
         flex-direction: column;
         padding: 20px 40px;
+        margin-bottom: 70px;
 
         %footer-shared {
             width: 100%;
@@ -362,8 +419,7 @@
             border-bottom: 1px #262840 solid;
 
             .nav__list,
-            .btn,
-            .footer__social {
+            .btn {
                 margin-bottom: 24px;
             }
 
@@ -408,6 +464,7 @@
     .intro__text-2 {
         margin-right: 0;
     }
+
 
     /* Latest auctions */
     .latest-auct__items {
@@ -551,15 +608,16 @@
 @media (max-width: 480px) {
     /* Intro # 1*/
     .intro__main-text {
-        transform: scale(0.38);
+        transform: scale(0.4);
+        font-weight: 600;
     }
 
     .intro__search {
-        transform: scale(0.4);
+        transform: scale(0.5);
         font-size: 25px;
 
         ::placeholder {
-            font-size: 20px;
+            font-size: 22px;
         }
     }
 
@@ -567,13 +625,32 @@
         padding: 0;
 
         img {
-            height: 25px;
-            width: 65px;
+            height: 35px;
+            width: 75px;
         }
     }
 
+    /* Latest auct */
+
+    .latest-auct__inner {
+        padding: 50px 0px;
+    }
+
+    .latest-auct__title {
+        font-size: 30px;
+        line-height: 125%;
+    }
+
+
     /* Get-Started #1 */
     .get-started__text {
+        padding: 0;
+
+        .get-started__title {
+            font-size: 30px;
+            line-height: 125%;
+        }
+
         .get-started__btns {
             gap: 16px;
             flex-direction: column;
@@ -624,16 +701,36 @@
     }
 
     /* Popular */
+    .popular__inner {
+        padding: 50px 0;
+    }
+
+    .popular__title {
+        font-size: 30px;
+    }
+
+    .popular__buttons {
+        margin-bottom: 30px;
+    }
+
     .popular__items {
         padding: 30px;
+        margin-bottom: 25px;
     }
 
     /* Counters */
+    .counters__inner {
+        padding: 70px 0;
+    }
     .counters__value {
         font-size: 24px;
     }
 
     /* Folder */
+    .folder {
+        margin-bottom: 30px;
+    }
+
     .folder__inner {
         padding-left: 20px;
         padding-right: 20px;
@@ -642,10 +739,45 @@
     .folder__title {
         font-size: 22px;
     }
+
+    /* Row */
+
+    .row {
+        margin-bottom: 40px;
+    }
+
+    .nft__image {
+        width: 70px;
+        height: auto;
+    }
+
+    /* Footer */
+
+    .footer__inner {
+        margin-bottom: 25px;
+    }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 330px) {
     .intro__main-text {
         transform: scale(0.3);
+    }
+
+    .intro__search {
+        transform: scale(0.4);
+        font-size: 25px;
+
+        ::placeholder {
+            font-size: 20px;
+        }
+    }
+
+    .intro__partner {
+        padding: 0;
+
+        img {
+            height: 25px;
+            width: 65px;
+        }
     }
 }

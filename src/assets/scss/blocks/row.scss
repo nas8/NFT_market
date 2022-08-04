@@ -1,13 +1,15 @@
 .row {
     margin-bottom: 71px;
+    overflow: hidden;
 }
 
 .row__inner {
+    width: 100%;
     display: flex;
     justify-content: space-between;
+    padding: 20px 0;
 
     overflow: hidden;
-    padding: 20px 0;
 }
 
 .row__inner {

@@ -5,7 +5,7 @@
 .folder__inner {
     display: flex;
     width: 100%;
-    min-height: 558;
+    min-height: 597px;
     display: flex;
     background: url(../images/folder/background.png) center no-repeat;
     background-size: 100% 100%;
@@ -13,6 +13,7 @@
     padding: 142px 0 79px 90px;
 
     overflow: hidden;
+    position: relative;
 }
 
 .folder__left {
@@ -97,4 +98,9 @@
 .folder__img-5 {
     top: 85%;
     right: -20%;
+}
+
+.folder__circles {
+    top: 20px;
+    left: 20px;
 }

@@ -170,3 +170,19 @@
 .triple__item_mobile {
     display: none;
 }
+
+.circles {
+    display: flex;
+    position: absolute;
+    left: 14px;
+    top: 12px;
+    gap: 8px;
+
+    span {
+        width: 9px;
+        height: 9px;
+        background-color: $grey;
+        opacity: 0.5;
+        border-radius: 50%;
+    }
+}
