@@ -11,6 +11,11 @@ body {
     margin: 0 auto;
 }
 
+body.light {
+    background-color: $white;
+    color: black;
+}
+
 *,
 *:before,
 *:after {
@@ -25,6 +30,7 @@ body {
 }
 
 //blocks
+@import "blocks/mode.scss";
 @import "blocks/nft-icon.scss";
 @import "blocks/header.scss";
 @import "blocks/buttons.scss";

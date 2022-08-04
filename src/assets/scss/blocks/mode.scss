@@ -1,0 +1,49 @@
+body.light {
+    .nav__link:hover {
+        color: black;
+    }
+
+    .intro {
+        background: $white url(../images/intro-background_white.png) center no-repeat;
+
+        .intro__search {
+            border: 1px $grey solid;
+        }
+    }
+
+    .logo__name{
+        color: black;
+    }
+
+    .folder__inner {
+        background: url(../images/folder/background_white.png) center no-repeat;
+    }
+
+    .btn_transparent {
+        border: $grey 2px solid;
+    }
+
+    .btn_transparent:hover {
+        border: black 2px solid;
+        color: black;
+    }
+
+    .btn_transparent {
+        border: 1px $grey solid;
+    }
+
+    .triple__title_size_s {
+        color: $white;
+    }
+
+    .latest-auct__item {
+        border: $grey 1px solid;
+
+        .nft-card__time {
+            border-bottom: $grey 1px solid;
+        }
+    }
+
+
+
+}
