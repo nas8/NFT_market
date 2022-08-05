@@ -381,6 +381,7 @@ body.light .logo__name {
 }
 body.light .folder__inner {
   background: url(../images/folder/background_white.png) center no-repeat;
+  background-size: 100% 100%;
 }
 body.light .btn_transparent {
   border: #7780A1 2px solid;
@@ -389,8 +390,11 @@ body.light .btn_transparent:hover {
   border: black 2px solid;
   color: black;
 }
-body.light .btn_transparent {
-  border: 1px #7780A1 solid;
+body.light .triple__item {
+  border: 1px solid #7780A1;
+}
+body.light .triple__item_backg_grad {
+  border: 0;
 }
 body.light .triple__title_size_s {
   color: white;
@@ -400,6 +404,61 @@ body.light .latest-auct__item {
 }
 body.light .latest-auct__item .nft-card__time {
   border-bottom: #7780A1 1px solid;
+}
+body.light .latest-auct__item .nft-card__avatars._1 {
+  background: url(../images/nft_cart/avatars-group-1_white.svg) center no-repeat;
+  background-size: 100% 100%;
+}
+body.light .latest-auct__item .nft-card__avatars._2 {
+  background: url(../images/nft_cart/avatars-group-2_white.svg) center no-repeat;
+  background-size: 100% 100%;
+}
+body.light .latest-auct__item .nft-card__avatars._3 {
+  background: url(../images/nft_cart/avatars-group-3_white.svg) center no-repeat;
+  background-size: 100% 100%;
+}
+body.light .nft-card-slim__data {
+  border-bottom: 1px solid #7780A1;
+}
+body.light .line {
+  background: #7780A1;
+}
+body.light .folder__img-1 {
+  background: url(../images/folder/user-1_white.svg) center no-repeat;
+  background-size: contain;
+}
+body.light .folder__img-2 {
+  background: url(../images/folder/user-2_white.svg) center no-repeat;
+  background-size: contain;
+}
+body.light .folder__img-3 {
+  background: url(../images/folder/user-3_white.svg) center no-repeat;
+  background-size: contain;
+}
+body.light .folder__img-4 {
+  background: url(../images/folder/user-4_white.svg) center no-repeat;
+  background-size: contain;
+}
+body.light .folder__img-5 {
+  background: url(../images/folder/user-5_white.svg) center no-repeat;
+  background-size: contain;
+}
+body.light .footer__inner {
+  border: 1px solid #7780A1;
+}
+body.light .footer__inner .footer__center, body.light .footer__inner .footer__left {
+  border-right: 1px #7780A1 solid;
+}
+body.light .footer__inner .footer__form {
+  border: 1px #7780A1 solid;
+}
+body.light .footer__inner .footer__links a:hover {
+  color: #000000;
+}
+body.light .nft-card__time-icon.svg path,
+body.light .get-started__pic.svg path,
+body.light .counters__icon.svg path {
+  fill: #000000;
 }
 
 .nft {
@@ -553,20 +612,21 @@ body.light .latest-auct__item .nft-card__time {
   background-color: white;
 }
 
-.mode {
-  display: block;
-  width: 50px;
-  height: 50px;
+.btn-mode {
+  width: 35px;
+  height: 35px;
   cursor: pointer;
   background: url(../images/sun.svg) center no-repeat;
-  transition: all 0.1s ease;
+  background-size: contain;
+  transition: transform 0.1s ease;
 }
 
-.mode.light {
+.btn-mode.light {
   background: url(../images/moon.svg) center no-repeat;
+  background-size: contain;
 }
 
-.mode:hover {
+.btn-mode:hover {
   transform: scale(1.1);
 }
 
@@ -956,7 +1016,21 @@ body.light .latest-auct__item .nft-card__time {
 }
 .nft-card__reviews .nft-card__avatars {
   display: block;
+  width: 132px;
+  height: 48px;
   margin-right: 8px;
+}
+.nft-card__reviews .nft-card__avatars._1 {
+  background: url(../images/nft_cart/avatars-group-1.svg) center no-repeat;
+  background-size: 100% 100%;
+}
+.nft-card__reviews .nft-card__avatars._2 {
+  background: url(../images/nft_cart/avatars-group-2.svg) center no-repeat;
+  background-size: 100% 100%;
+}
+.nft-card__reviews .nft-card__avatars._3 {
+  background: url(../images/nft_cart/avatars-group-3.svg) center no-repeat;
+  background-size: 100% 100%;
 }
 .nft-card__reviews .nft-card__right-info, .nft-card__reviews .nft-card__left-info {
   display: flex;
@@ -1456,28 +1530,38 @@ body.light .latest-auct__item .nft-card__time {
 }
 
 .folder__img-1 {
+  background: url(../images/folder/user-1.svg) center no-repeat;
+  background-size: contain;
   top: 0;
   right: 20%;
 }
 
 .folder__img-2 {
+  background: url(../images/folder/user-2.svg) center no-repeat;
+  background-size: contain;
   top: -10%;
   right: -30%;
 }
 
 .folder__img-3 {
+  background: url(../images/folder/user-3.svg) center no-repeat;
+  background-size: contain;
   top: 40%;
   right: 10%;
 }
 
 .folder__img-4 {
+  background: url(../images/folder/user-4.svg) center no-repeat;
+  background-size: contain;
   top: 80%;
   right: 30%;
 }
 
 .folder__img-5 {
+  background: url(../images/folder/user-5.svg) center no-repeat;
+  background-size: contain;
   top: 85%;
-  right: -20%;
+  right: -23%;
 }
 
 .folder__circles {
@@ -1810,6 +1894,10 @@ body.light .latest-auct__item .nft-card__time {
   .burger__container .burger {
     margin-right: 0;
   }
+  .btn-mode {
+    width: 25px;
+    height: 25px;
+  }
   /* Intro */
   .intro__main-text {
     transform: scale(0.6);
@@ -1953,6 +2041,13 @@ body.light .latest-auct__item .nft-card__time {
   }
   .footer__inner .footer__right form {
     max-width: 500px;
+  }
+  body.light .footer__inner .footer__right {
+    border: 0;
+  }
+  body.light .footer__inner .footer__left, body.light .footer__inner .footer__center {
+    border-right: 0;
+    border-bottom: 1px solid #7780A1;
   }
 }
 @media (max-width: 767px) {

@@ -68,6 +68,7 @@
     width: 50%;
 }
 
+
 .folder__img {
     display: block;
     width: 460px;
@@ -76,28 +77,38 @@
 }
 
 .folder__img-1 {
+    background: url(../images/folder/user-1.svg) center no-repeat;
+    background-size: contain;
     top: 0;
     right: 20%;
 }
 
 .folder__img-2 {
+    background: url(../images/folder/user-2.svg) center no-repeat;
+    background-size: contain;
     top: -10%;
     right: -30%;
 }
 
 .folder__img-3 {
+    background: url(../images/folder/user-3.svg) center no-repeat;
+    background-size: contain;
     top: 40%;
     right: 10%;
 }
 
 .folder__img-4 {
+    background: url(../images/folder/user-4.svg) center no-repeat;
+    background-size: contain;
     top: 80%;
     right: 30%;
 }
 
 .folder__img-5 {
+    background: url(../images/folder/user-5.svg) center no-repeat;
+    background-size: contain;
     top: 85%;
-    right: -20%;
+    right: -23%;
 }
 
 .folder__circles {

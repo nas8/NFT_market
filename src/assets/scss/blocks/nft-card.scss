@@ -61,6 +61,7 @@
     }
 }
 
+
 .nft-card__reviews {
     display: flex;
     align-items: center;
@@ -68,8 +69,26 @@
 
     .nft-card__avatars {
         display: block;
+        width: 132px;
+        height: 48px;
         margin-right: 8px;
     }
+
+    .nft-card__avatars._1 {
+        background: url(../images/nft_cart/avatars-group-1.svg) center no-repeat;
+        background-size: 100% 100%;
+    }
+
+    .nft-card__avatars._2 {
+        background: url(../images/nft_cart/avatars-group-2.svg) center no-repeat;
+        background-size: 100% 100%;
+    }
+
+    .nft-card__avatars._3 {
+        background: url(../images/nft_cart/avatars-group-3.svg) center no-repeat;
+        background-size: 100% 100%;
+    }
+
 
     .nft-card__right-info, .nft-card__left-info {
         display: flex;

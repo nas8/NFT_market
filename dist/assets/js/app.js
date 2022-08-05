@@ -35,7 +35,17 @@ eval("const latestAuctItems = document.querySelector('.latest-auct__items')\r\n\
   \*******************************/
 /***/ (function() {
 
-eval("const modeBtn = document.querySelector('.mode');\r\n\r\nmodeBtn.addEventListener('click', () => {\r\n    modeBtn.classList.toggle('light');\r\n    document.body.classList.toggle('light');\r\n})\n\n//# sourceURL=webpack://nft_market/./src/assets/js/mode.js?");
+eval("const modeBtn = document.querySelector('.btn-mode');\r\nlet currentMode;\r\n\r\nif(localStorage.getItem('mode') === null) {\r\n    localStorage.setItem('mode', 'dark')\r\n}\r\n\r\ncurrentMode = localStorage.getItem('mode');\r\n\r\nfunction setMode(){\r\n    if(currentMode === 'dark') {\r\n        modeBtn.classList.remove('light');\r\n        document.body.classList.remove('light');\r\n    } else {\r\n        modeBtn.classList.add('light');\r\n        document.body.classList.add('light');\r\n    }\r\n}\r\nsetMode();\r\n\r\nmodeBtn.addEventListener('click', () => {\r\n    currentMode = localStorage.getItem('mode');\r\n\r\n    if (currentMode === 'dark') {\r\n        localStorage.setItem('mode', 'light');\r\n        modeBtn.classList.add('light');\r\n        document.body.classList.add('light');\r\n\r\n    } else {\r\n        localStorage.setItem('mode', 'dark');\r\n        modeBtn.classList.remove('light');\r\n        document.body.classList.remove('light');\r\n    };\r\n})\r\n\r\n\r\n\n\n//# sourceURL=webpack://nft_market/./src/assets/js/mode.js?");
+
+/***/ }),
+
+/***/ "./src/assets/js/svg.js":
+/*!******************************!*\
+  !*** ./src/assets/js/svg.js ***!
+  \******************************/
+/***/ (function() {
+
+eval("/*\r\n * Replace all SVG images with inline SVG\r\n */\r\ndocument.querySelectorAll('img.svg').forEach(function(img){\r\n    var imgID = img.id;\r\n    var imgClass = img.className;\r\n    var imgURL = img.src;\r\n\r\n    fetch(imgURL).then(function(response) {\r\n        return response.text();\r\n    }).then(function(text){\r\n\r\n        var parser = new DOMParser();\r\n        var xmlDoc = parser.parseFromString(text, \"text/xml\");\r\n\r\n        // Get the SVG tag, ignore the rest\r\n        var svg = xmlDoc.getElementsByTagName('svg')[0];\r\n\r\n        // Add replaced image ID to the new SVG\r\n        if(typeof imgID !== 'undefined') {\r\n            svg.setAttribute('id', imgID);\r\n        }\r\n        // Add replaced image classes to the new SVG\r\n        if(typeof imgClass !== 'undefined') {\r\n            svg.setAttribute('class', imgClass+' replaced-svg');\r\n        }\r\n\r\n        // Remove any invalid XML tags as per http://validator.w3.org\r\n        svg.removeAttribute('xmlns:a');\r\n\r\n        // Check if the viewport is set, if the viewport is not set the SVG wont't scale.\r\n        if(!svg.getAttribute('viewBox') && svg.getAttribute('height') && svg.getAttribute('width')) {\r\n            svg.setAttribute('viewBox', '0 0 ' + svg.getAttribute('height') + ' ' + svg.getAttribute('width'))\r\n        }\r\n\r\n        // Replace image with new SVG\r\n        img.parentNode.replaceChild(svg, img);\r\n\r\n    });\r\n\r\n});\n\n//# sourceURL=webpack://nft_market/./src/assets/js/svg.js?");
 
 /***/ }),
 
@@ -58,6 +68,7 @@ eval("const tripleItem = document.querySelector('.triple__item');\r\nconst tripl
 /******/ 	__webpack_modules__["./src/assets/js/intro.js"]();
 /******/ 	__webpack_modules__["./src/assets/js/latest-auct.js"]();
 /******/ 	__webpack_modules__["./src/assets/js/mode.js"]();
+/******/ 	__webpack_modules__["./src/assets/js/svg.js"]();
 /******/ 	var __webpack_exports__ = {};
 /******/ 	__webpack_modules__["./src/assets/js/triple.js"]();
 /******/ 	

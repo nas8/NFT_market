@@ -242,6 +242,11 @@
         }
     }
 
+    .btn-mode {
+        width: 25px;
+        height: 25px;
+    }
+
      /* Intro */
      .intro__main-text {
         transform: scale(0.6);
@@ -436,6 +441,18 @@
 
         }
 
+    }
+
+    body.light {
+        .footer__inner {
+            .footer__right {
+                border: 0;
+            }
+            .footer__left, .footer__center {
+                border-right: 0;
+                border-bottom: 1px solid $grey;
+            }
+        }
     }
 
 

@@ -17,6 +17,7 @@ body.light {
 
     .folder__inner {
         background: url(../images/folder/background_white.png) center no-repeat;
+        background-size: 100% 100%;
     }
 
     .btn_transparent {
@@ -28,8 +29,13 @@ body.light {
         color: black;
     }
 
-    .btn_transparent {
-        border: 1px $grey solid;
+
+    .triple__item {
+        border: 1px solid $grey;
+    }
+
+    .triple__item_backg_grad {
+        border: 0;
     }
 
     .triple__title_size_s {
@@ -42,8 +48,83 @@ body.light {
         .nft-card__time {
             border-bottom: $grey 1px solid;
         }
+
+        .nft-card__avatars._1 {
+            background: url(../images/nft_cart/avatars-group-1_white.svg) center no-repeat;
+            background-size: 100% 100%;
+        }
+
+        .nft-card__avatars._2 {
+            background: url(../images/nft_cart/avatars-group-2_white.svg) center no-repeat;
+            background-size: 100% 100%;
+        }
+
+        .nft-card__avatars._3 {
+            background: url(../images/nft_cart/avatars-group-3_white.svg) center no-repeat;
+            background-size: 100% 100%;
+        }
     }
 
+    .nft-card-slim__data {
+        border-bottom: 1px solid $grey;
+    }
+
+    .line {
+        background: $grey;
+    }
+
+
+    .folder__img-1 {
+        background: url(../images/folder/user-1_white.svg) center no-repeat;
+        background-size: contain;
+    }
+
+    .folder__img-2 {
+        background: url(../images/folder/user-2_white.svg) center no-repeat;
+        background-size: contain;
+    }
+
+    .folder__img-3 {
+        background: url(../images/folder/user-3_white.svg) center no-repeat;
+        background-size: contain;
+    }
+
+    .folder__img-4 {
+        background: url(../images/folder/user-4_white.svg) center no-repeat;
+        background-size: contain;
+    }
+
+    .folder__img-5 {
+        background: url(../images/folder/user-5_white.svg) center no-repeat;
+        background-size: contain;
+    }
+
+
+    .footer__inner {
+        border: 1px solid $grey;
+
+        .footer__center, .footer__left {
+            border-right: 1px $grey solid;
+        }
+
+        .footer__form {
+            border: 1px $grey solid;
+        }
+
+        .footer__links {
+            a:hover {
+                color: #000000;
+            }
+        }
+    }
+
+
+    //changing color of svg in light mode with tag img via svg.js script
+    .nft-card__time-icon.svg path,
+    .get-started__pic.svg path,
+    .counters__icon.svg path {
+        fill: #000000;
+    }
 
 
 }
