@@ -385,6 +385,13 @@ body.light {
     padding: 0 15px;
 }
 
+body.light .header-fixed {
+    height: 70px;
+    position: fixed;
+    background: white;
+    box-shadow: 0 0px 20px 0 rgba(0, 0, 0, 0.5);
+}
+
 body.light .nav__link:hover {
     color: black;
 }
@@ -538,10 +545,15 @@ body.light .counters__icon.svg path {
     line-height: 150%;
 }
 
-.header__inner {
+header {
+    width: 100%;
+    height: 117px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 10;
     margin: 0 auto;
     max-width: 1920px;
-    position: relative;
 }
 
 .top-bar {
@@ -553,11 +565,6 @@ body.light .counters__icon.svg path {
     justify-content: space-between;
     -ms-flex-align: center;
     align-items: center;
-    height: 117px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1000;
 }
 
 .top-bar__logo {
@@ -698,6 +705,14 @@ body.light .counters__icon.svg path {
 .btn-mode:hover {
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
+}
+
+.header-fixed {
+    height: 70px;
+    position: fixed;
+    background: #060714;
+    box-shadow: 0 0px 10px 0 rgba(189, 189, 189, 0.2);
+    transition: all 0.2s ease;
 }
 
 .btn {
@@ -2455,7 +2470,7 @@ body.light .counters__icon.svg path {
 @media (max-width: 767px) {
   /* header */
     header .logo__name {
-        display: none;
+        font-size: 16px;
     }
   /* Intro */
     .intro__main-text {
