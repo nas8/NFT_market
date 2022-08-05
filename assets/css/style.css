@@ -367,6 +367,11 @@ body {
     margin: 0 auto;
 }
 
+body.light {
+    background-color: white;
+    color: black;
+}
+
 *,
 *:before,
 *:after {
@@ -378,6 +383,96 @@ body {
     max-width: 1422px;
     margin: 0 auto;
     padding: 0 15px;
+}
+
+body.light .nav__link:hover {
+    color: black;
+}
+
+body.light .intro {
+    background: white url(../images/intro-background_white.png) center no-repeat;
+}
+
+body.light .intro .intro__search {
+    border: 1px #7780A1 solid;
+}
+
+body.light .logo__name {
+    color: black;
+}
+
+body.light .folder__inner {
+    background: url(../images/folder/background_white.png) center no-repeat;
+}
+
+body.light .btn_transparent {
+    border: #7780A1 2px solid;
+}
+
+body.light .btn_transparent:hover {
+    border: black 2px solid;
+    color: black;
+}
+
+body.light .triple__item {
+    border: 1px solid #7780A1;
+}
+
+body.light .triple__item_backg_grad {
+    border: 0;
+}
+
+body.light .triple__title_size_s {
+    color: white;
+}
+
+body.light .latest-auct__item {
+    border: #7780A1 1px solid;
+}
+
+body.light .latest-auct__item .nft-card__time {
+    border-bottom: #7780A1 1px solid;
+}
+
+body.light .latest-auct__item .nft-card__avatars._1 {
+    background: url(../images/nft_cart/avatars-group-1_white.svg) center no-repeat;
+    background-size: 100% 100%;
+}
+
+body.light .latest-auct__item .nft-card__avatars._2 {
+    background: url(../images/nft_cart/avatars-group-2_white.svg) center no-repeat;
+    background-size: 100% 100%;
+}
+
+body.light .latest-auct__item .nft-card__avatars._3 {
+    background: url(../images/nft_cart/avatars-group-3_white.svg) center no-repeat;
+    background-size: 100% 100%;
+}
+
+body.light .nft-card-slim__data {
+    border-bottom: 1px solid #7780A1;
+}
+
+body.light .line {
+    background: #7780A1;
+}
+
+body.light .footer__inner {
+    border: 1px solid #7780A1;
+}
+
+body.light .footer__inner .footer__center, body.light .footer__inner .footer__left {
+    border-right: 1px #7780A1 solid;
+}
+
+body.light .footer__inner .footer__form {
+    border: 1px #7780A1 solid;
+}
+
+body.light .nft-card__time-icon.svg path,
+body.light .get-started__pic.svg path,
+body.light .counters__icon.svg path {
+    fill: #000000;
 }
 
 .nft {
@@ -556,8 +651,19 @@ body {
 
 .mode {
     width: 50px;
-    height: auto;
+    height: 50px;
+    cursor: pointer;
     background: url(../images/sun.svg) center no-repeat;
+    transition: all 0.1s ease;
+}
+
+.mode.light {
+    background: url(../images/moon.svg) center no-repeat;
+}
+
+.mode:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 .btn {
@@ -962,6 +1068,10 @@ body {
     margin-bottom: 24px;
 }
 
+.latest-auct__text {
+    display: none;
+}
+
 .nft-card__image {
     display: block;
     width: 100%;
@@ -1037,7 +1147,24 @@ body {
 
 .nft-card__reviews .nft-card__avatars {
     display: block;
+    width: 132px;
+    height: 48px;
     margin-right: 8px;
+}
+
+.nft-card__reviews .nft-card__avatars._1 {
+    background: url(../images/nft_cart/avatars-group-1.svg) center no-repeat;
+    background-size: 100% 100%;
+}
+
+.nft-card__reviews .nft-card__avatars._2 {
+    background: url(../images/nft_cart/avatars-group-2.svg) center no-repeat;
+    background-size: 100% 100%;
+}
+
+.nft-card__reviews .nft-card__avatars._3 {
+    background: url(../images/nft_cart/avatars-group-3.svg) center no-repeat;
+    background-size: 100% 100%;
 }
 
 .nft-card__reviews .nft-card__right-info, .nft-card__reviews .nft-card__left-info {
@@ -1159,7 +1286,6 @@ body {
     font-size: 64px;
     line-height: 100%;
     letter-spacing: 0.2px;
-    color: white;
     margin-bottom: 32px;
 }
 
@@ -2265,6 +2391,15 @@ body {
 
     .footer__inner .footer__right form {
         max-width: 500px;
+    }
+
+    body.light .footer__right {
+        border: 0;
+    }
+
+    body.light .footer__left, body.light .footer__center {
+        border-right: 0;
+        border-bottom: 1px solid #7780A1;
     }
 }
 
