@@ -9,6 +9,8 @@ body {
     font-family: $fontSora;
 
     margin: 0 auto;
+
+    overflow-x: hidden;
 }
 
 body.light {

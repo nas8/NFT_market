@@ -1,4 +1,4 @@
-header {
+.header {
     width: 100%;
     height: 117px;
     position: absolute;
@@ -10,9 +10,13 @@ header {
     max-width: 1920px;
 }
 
+.nav {
+    display: flex;
+}
+
 .top-bar {
     display: flex;
-    width: 100%;
+    // width: 100%;
     height: 100%;
     justify-content: space-between;
     align-items: center;
@@ -163,3 +167,9 @@ header {
     transition: all 0.2s ease;
 }
 
+
+.top-bar__nav {
+    .top-bar__right-btns {
+        display: none;
+    }
+}

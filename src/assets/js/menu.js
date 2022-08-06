@@ -1,4 +1,6 @@
 const header = document.querySelector('header');
+const burgerMenu = document.querySelector('.burger__container');
+const navMenu = document.querySelector('.nav');
 let scrollPos;
 
 
@@ -15,3 +17,12 @@ function showFixedNav() {
         header.classList.remove('header-fixed');
     };
 }
+
+//menu burger appearance
+if (burgerMenu) {
+    burgerMenu.addEventListener('click', function(e) {
+        document.body.classList.toggle('_lock');
+        burgerMenu.classList.toggle('_active');
+        navMenu.classList.toggle('_active');
+    })
+};
