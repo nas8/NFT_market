@@ -367,6 +367,10 @@ body {
     margin: 0 auto;
 }
 
+body._lock {
+    overflow: hidden;
+}
+
 body.light {
     background-color: white;
     color: black;
@@ -2185,15 +2189,16 @@ body.light .counters__icon.svg path {
         display: block;
         position: absolute;
         right: 0;
-        top: 70px;
+        top: -590%;
         width: 100%;
         height: auto;
         overflow: auto;
-        background: rgba(0, 0, 0, 0.9);
+        background: rgba(236, 236, 236, 0.9);
+        border-radius: 0 0 20px 20px;
         border-right: 0;
         border-top: 0;
         transition: all 0.2s ease;
-        z-index: 1;
+        z-index: -1;
     }
 
     .top-bar__nav .nav__list {
@@ -2217,13 +2222,29 @@ body.light .counters__icon.svg path {
         content: "";
         color: rgb(0, 0, 0);
         position: fixed;
-        z-index: -1;
+        z-index: 2;
         width: 100%;
         top: 0;
         right: 0;
         height: 70px;
+        background-color: #060714;
+    }
+
+    body.light .top-bar__nav {
+        background: rgba(0, 0, 0, 0.9);
+    }
+
+    body.light .top-bar__nav::before {
         background-color: white;
-        box-shadow: 0 0px 30px 0 rgba(0, 0, 0, 0.7);
+    }
+
+    .top-bar__nav._active {
+        top: 70px;
+    }
+  /* Intro # 1*/
+    .intro__main-text {
+        -webkit-transform: scale(0.7);
+        transform: scale(0.7);
     }
   /* Get-Started # 1*/
     .get-started__img {
@@ -2306,21 +2327,6 @@ body.light .counters__icon.svg path {
 
     .top-bar__logo {
         margin-left: 15px;
-    }
-
-    .top-bar__nav {
-        display: block;
-        position: absolute;
-        visibility: hidden;
-        right: 0;
-        top: 70px;
-        width: 200px;
-        height: auto;
-        overflow: auto;
-        background: rgba(0, 0, 0, 0.9);
-        text-align: right;
-        transition: all 0.2s ease;
-        z-index: 1;
     }
 
     .top-bar__nav .nav__list {
