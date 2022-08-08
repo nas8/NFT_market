@@ -6,9 +6,9 @@ body.light {
         box-shadow: 0 0px 20px 0 rgba(0, 0, 0, 0.5);
     }
 
-    .nav__link:hover {
-        color: black;
-    }
+
+
+
 
     .intro {
         background: $white url(../images/intro-background_white.png) center no-repeat;
@@ -30,12 +30,6 @@ body.light {
     .btn_transparent {
         border: $grey 2px solid;
     }
-
-    .btn_transparent:hover {
-        border: black 2px solid;
-        color: black;
-    }
-
 
     .triple__item {
         border: 1px solid $grey;
@@ -133,4 +127,37 @@ body.light {
         fill: #000000;
     }
 
+
+    //item.html
+
+    .item__inner{
+        border: 1px solid #E2E2ED;
+    }
+
+    .item__price {
+        background: #F2F3F6;
+        border: 0;
+    }
+
+    .item__graph {
+        .graph__img {
+            background: url(../images/item/graph.png) center no-repeat;
+            background-size: contain;
+        }
+    }
+
 }
+
+
+body._pc.light {
+
+    .nav__link:hover {
+        color: black;
+    }
+
+    .btn_transparent:hover {
+        border: black 2px solid;
+        color: black;
+    }
+}
+

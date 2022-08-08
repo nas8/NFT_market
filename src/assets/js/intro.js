@@ -1,4 +1,7 @@
 const intro = document.querySelector('.intro')
+
+let path = window.location.pathname;
+let page = path.split("/").pop();
 let isMobile = {
     Android: function () {
         return navigator.userAgent.match(/Android/i);
@@ -27,13 +30,19 @@ let isMobile = {
 };
 
 
-//action when website is opening on mobile devices
+if(page === '/') {
+    if(isMobile.any()) {
+        window.addEventListener('resize', () => {
+            intro.style.height = `${document.documentElement.clientHeight}px`;
+        });
+        intro.style.height = `${document.documentElement.clientHeight}px`;
+    }
+
+};
+
 if(isMobile.any()) {
     document.body.classList.add('_touch');
-    window.addEventListener('resize', () => {
-        intro.style.height = `${document.documentElement.clientHeight}px`;
-    });
-    intro.style.height = `${document.documentElement.clientHeight}px`;
 } else {
     document.body.classList.add('_pc');
-};
+}
+

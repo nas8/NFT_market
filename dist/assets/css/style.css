@@ -367,13 +367,17 @@ body {
     margin: 0 auto;
 }
 
-body._lock {
+body.lock {
     overflow: hidden;
 }
 
 body.light {
     background-color: white;
     color: black;
+}
+
+body._touch {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 *,
@@ -396,10 +400,6 @@ body.light .header-fixed {
     box-shadow: 0 0px 20px 0 rgba(0, 0, 0, 0.5);
 }
 
-body.light .nav__link:hover {
-    color: black;
-}
-
 body.light .intro {
     background: white url(../images/intro-background_white.png) center no-repeat;
 }
@@ -419,11 +419,6 @@ body.light .folder__inner {
 
 body.light .btn_transparent {
     border: #7780A1 2px solid;
-}
-
-body.light .btn_transparent:hover {
-    border: black 2px solid;
-    color: black;
 }
 
 body.light .triple__item {
@@ -516,6 +511,24 @@ body.light .counters__icon.svg path {
     fill: #000000;
 }
 
+body.light .item__inner {
+    border: 1px solid #E2E2ED;
+}
+
+body.light .item__price {
+    background: #F2F3F6;
+    border: 0;
+}
+
+body._pc.light .nav__link:hover {
+    color: black;
+}
+
+body._pc.light .btn_transparent:hover {
+    border: black 2px solid;
+    color: black;
+}
+
 .nft {
     display: -ms-flexbox;
     display: flex;
@@ -558,6 +571,14 @@ body.light .counters__icon.svg path {
     z-index: 10;
     margin: 0 auto;
     max-width: 1920px;
+}
+
+.header-fixed {
+    height: 70px;
+    position: fixed;
+    background: #060714;
+    box-shadow: 0 0px 10px 0 rgba(189, 189, 189, 0.2);
+    transition: all 0.2s ease;
 }
 
 .nav {
@@ -611,7 +632,7 @@ body.light .counters__icon.svg path {
     transition: color 0.1s linear;
 }
 
-.nav__link:hover {
+body._pc .nav__link:hover {
     color: white;
 }
 
@@ -629,6 +650,10 @@ body.light .counters__icon.svg path {
     justify-content: flex-end;
 }
 
+.top-bar__nav .top-bar__right-btns {
+    display: none;
+}
+
 /* Burger
 ===================*/
 .burger__container {
@@ -638,6 +663,7 @@ body.light .counters__icon.svg path {
     padding: 10px;
     border: 2px #7780A1 solid;
     border-radius: 10px;
+    cursor: pointer;
 }
 
 .burger {
@@ -684,14 +710,12 @@ body.light .counters__icon.svg path {
     top: 50%;
     -webkit-transform: rotate(-45deg) translate(0px, -50%);
     transform: rotate(-45deg) translate(0px, -50%);
-    background-color: white;
 }
 
 .burger._active::after {
     bottom: 50%;
     -webkit-transform: rotate(45deg) translate(0px, 50%);
     transform: rotate(45deg) translate(0px, 50%);
-    background-color: white;
 }
 
 .btn-mode {
@@ -713,18 +737,6 @@ body.light .counters__icon.svg path {
 .btn-mode:hover {
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
-}
-
-.header-fixed {
-    height: 70px;
-    position: fixed;
-    background: #060714;
-    box-shadow: 0 0px 10px 0 rgba(189, 189, 189, 0.2);
-    transition: all 0.2s ease;
-}
-
-.top-bar__nav .top-bar__right-btns {
-    display: none;
 }
 
 .btn {
@@ -803,6 +815,7 @@ body.light .counters__icon.svg path {
     width: 100%;
     height: 100vh;
     max-height: 1191px;
+    min-height: 700px;
     background: #060714 url(../images/intro-background.png) center no-repeat;
     background-size: cover;
 }
@@ -1523,7 +1536,7 @@ body.light .counters__icon.svg path {
     flex-direction: column;
     padding: 40px;
     position: absolute;
-    bottom: 0;
+    bottom: 2px;
     left: 0;
 }
 
@@ -2049,6 +2062,175 @@ body.light .counters__icon.svg path {
     transform: scale(1.1);
 }
 
+.item {
+    margin-top: 127px;
+    height: 100vh;
+}
+
+.item__graph p, .item__price p, .info__inner p, .item__right .item__descript {
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.2px;
+    color: #7780A1;
+}
+
+.item__inner {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    padding: 24px;
+    border: 1px solid #262840;
+    border-radius: 20px;
+}
+
+.item__left {
+    display: -ms-flexbox;
+    display: flex;
+    width: 50%;
+    border-radius: 20px;
+}
+
+.item__left .item__img {
+    max-width: 684px;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.item__right {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 50%;
+    padding: 72px 94px 0 92px;
+}
+
+.item__right .item__name {
+    font-family: "Sora", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 125%;
+    letter-spacing: 0.2px;
+    margin-bottom: 8px;
+}
+
+.item__right .item__descript {
+    margin-bottom: 28px;
+}
+
+.item__right .item__info {
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 40px;
+}
+
+.info__inner {
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.info__inner .info__avatar {
+    margin-right: 17px;
+}
+
+.info__inner p {
+    font-size: 14px;
+    line-height: 150%;
+}
+
+.info__inner .info__name {
+    font-family: "Sora", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 125%;
+    letter-spacing: 0.2px;
+}
+
+.info__inner._1 {
+    margin-right: 48px;
+}
+
+.item__price {
+    width: 100%;
+    height: auto;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    border: 1px solid #262840;
+    border-radius: 20px;
+    margin-bottom: 40px;
+    padding: 32px 40px;
+    background: linear-gradient(187.96deg, rgba(255, 255, 255, 0.07) 0%, rgba(255, 255, 255, 0) 93.86%), #060714;
+}
+
+.item__price .item__price-inner {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-bottom: 34px;
+}
+
+.item__price p {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.item__price .item__price-left {
+    width: 50%;
+}
+
+.item__price .item__price-left .price__value {
+    font-family: "Sora", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 56px;
+    line-height: 100%;
+    letter-spacing: 0.2px;
+}
+
+.item__price .item__price-left .price__value span {
+    font-size: 24px;
+}
+
+.item__price .item__price-right .time__value {
+    font-family: "Sora", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0.2px;
+    margin-bottom: 7px;
+}
+
+.item__graph p {
+    color: #7780A1;
+    font-size: 14px;
+    margin-bottom: 21px;
+}
+
+.item__graph .graph__img {
+    width: 100%;
+    height: auto;
+    max-height: 185px;
+    background: url(../images/item/graph_dark.png) center no-repeat;
+    background-size: contain;
+}
+
 @media (max-width: 1500px) {
   /* Container */
     .container {
@@ -2192,13 +2374,13 @@ body.light .counters__icon.svg path {
         top: -590%;
         width: 100%;
         height: auto;
-        overflow: auto;
-        background: rgba(236, 236, 236, 0.9);
+        background: rgba(255, 255, 255, 0.95);
         border-radius: 0 0 20px 20px;
         border-right: 0;
         border-top: 0;
         transition: all 0.2s ease;
         z-index: -1;
+        padding-top: 70px;
     }
 
     .top-bar__nav .nav__list {
@@ -2216,6 +2398,10 @@ body.light .counters__icon.svg path {
     .top-bar__nav .nav__list .nav__elem {
         padding: 15px 20px 15px 15px;
         font-size: 18px;
+    }
+
+    .top-bar__nav .btn_transparent {
+        border: #7780A1 2px solid;
     }
 
     .top-bar__nav::before {
@@ -2239,7 +2425,7 @@ body.light .counters__icon.svg path {
     }
 
     .top-bar__nav._active {
-        top: 70px;
+        top: 0;
     }
   /* Intro # 1*/
     .intro__main-text {
@@ -2727,6 +2913,16 @@ body.light .counters__icon.svg path {
         -webkit-transform: scale(0.4);
         transform: scale(0.4);
         font-weight: 600;
+    }
+
+    .into__overtitle {
+        position: absolute;
+        top: 30%;
+    }
+
+    .intro__undertitle {
+        position: absolute;
+        bottom: 39%;
     }
 
     .intro__search {

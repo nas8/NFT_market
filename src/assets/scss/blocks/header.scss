@@ -62,7 +62,7 @@
     transition: color 0.1s linear;
 }
 
-.nav__link:hover {
+body._pc .nav__link:hover {
     color: $white;
 }
 
@@ -95,6 +95,8 @@
     padding: 10px;
     border: 2px $grey solid;
     border-radius: 10px;
+
+    cursor: pointer;
 }
 
 .burger {

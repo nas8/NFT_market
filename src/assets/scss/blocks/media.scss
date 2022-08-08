@@ -114,6 +114,15 @@
         margin-top: 2%;
     }
 
+
+
+
+    //item.html
+
+    .item__right {
+        padding-right: 0;
+    }
+
 }
 
 @media (max-width: 1200px) {
@@ -192,7 +201,6 @@
         right: 0;
         height: 70px;
         background-color: $primary;
-        // box-shadow: 0 0px 30px 0 rgba(0, 0, 0, .7);
     }
 
     body.light {
@@ -331,25 +339,6 @@
             }
         }
     }
-
-    // .top-bar__nav._active {
-
-    // }
-
-    // .nav::before {
-    //     content: '';
-    //     color: rgb(0, 0, 0);
-    //     position: fixed;
-    //     z-index: 0;
-    //     width: 100%;
-    //     top: 0;
-    //     right: 0;
-    //     height: 70px;
-    //     background-color: #ffff;
-    //     box-shadow: 0 0px 30px 0 rgba(0, 0, 0, .7);
-    // }
-
-
 
     .burger__container {
         display: block;
