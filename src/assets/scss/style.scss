@@ -12,6 +12,10 @@ body {
 
 }
 
+body._lock {
+    overflow: hidden;
+}
+
 body.light {
     background-color: $white;
     color: black;
