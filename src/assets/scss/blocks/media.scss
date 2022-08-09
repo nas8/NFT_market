@@ -1,5 +1,4 @@
 @media (max-width: 1500px) {
-
      /* Container */
      .container {
         max-width: 1194px;
@@ -115,14 +114,62 @@
     }
 
 
-
-
     /* Item.html */
-
-    .item__right {
-        padding-right: 0;
+    .item {
+        margin-top: 80px;
+    }
+    .item__inner {
+        transform: scale(0.9);
     }
 
+    .item__left {
+
+        .item__price {
+            display: flex;
+        }
+    }
+
+    .item__right {
+        padding: 0 0 0 40px;
+
+        .item__name {
+            font-size: 30px;
+        }
+
+        .item__descript {
+            margin-bottom: 20px;
+        }
+
+
+        .item__info {
+            margin-bottom: 20px;
+        }
+
+        .item__price {
+            margin-bottom: 20px;
+            padding: 25px;
+        }
+
+        .item__price-inner {
+            margin-bottom: 20px;
+        }
+
+        .item__price-left {
+            .price__value {
+                font-size: 35px;
+                line-height: 100%;
+                letter-spacing: 0.2px;
+            }
+        }
+
+        .item__graph {
+
+            .graph__img {
+                margin-bottom: 0px;
+            }
+
+        }
+    }
 }
 
 @media (max-width: 1200px) {
@@ -380,6 +427,23 @@
         display: none;
     }
 
+    .intro__nft-block {
+        display: flex;
+        margin-top: 3%;
+        gap: 20px;
+
+        .nft {
+            .nft__image {
+                width: 60px;
+                height: auto;
+            }
+
+            .nft__price {
+                font-size: 10px;
+            }
+        }
+    }
+
     /* Latest auctions */
     .latest-auct__item {
 
@@ -568,6 +632,12 @@
 
 
     /* Item.html */
+    .item {
+        margin-top: 127px;
+    }
+    .item__inner {
+        transform: scale(1);
+    }
 
     .item__graph {
         display: none;
@@ -888,12 +958,12 @@
 
     .into__overtitle {
         position: absolute;
-        top: 30%;
+        top: 27%;
     }
 
     .intro__undertitle {
         position: absolute;
-        bottom: 39%;
+        bottom: 45%;
     }
 
     .intro__search {
@@ -911,6 +981,20 @@
         img {
             height: 35px;
             width: 75px;
+        }
+    }
+
+    .intro__nft-block {
+        gap: 10px;
+        .nft {
+            .nft__image {
+                width: 45px;
+                height: auto;
+            }
+
+            .nft__price {
+                font-size: 8px;
+            }
         }
     }
 
@@ -1086,6 +1170,11 @@
             height: 25px;
             width: 65px;
         }
+    }
+
+    .intro__nft-block {
+        gap: 5px;
+
     }
 
 
