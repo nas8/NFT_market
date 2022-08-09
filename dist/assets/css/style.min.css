@@ -1789,6 +1789,9 @@ body._pc .nav__link:hover {
   height: auto;
   border-radius: 20px;
 }
+.item__left .item__graph {
+  display: none;
+}
 
 .item__right {
   display: flex;
@@ -1982,6 +1985,7 @@ body._pc .nav__link:hover {
     height: 60px;
     margin-top: 2%;
   }
+  /* Item.html */
   .item__right {
     padding-right: 0;
   }
@@ -2315,6 +2319,54 @@ body._pc .nav__link:hover {
     border-right: 0;
     border-bottom: 1px solid #7780A1;
   }
+  /* Item.html */
+  .item__graph {
+    display: none;
+  }
+  .item__left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 20px;
+  }
+  .item__left .item__img {
+    margin-bottom: 10px;
+  }
+  .item__left .item__graph {
+    display: flex;
+    flex-direction: column;
+  }
+  .item__left .item__graph .graph__img {
+    margin-bottom: 10px;
+  }
+  .item__right {
+    padding: 0;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .item__right .item__name {
+    font-size: 40px;
+  }
+  .item__right .item__info {
+    flex-direction: column;
+  }
+  .item__right .item__info .info__inner._1 {
+    margin-bottom: 15px;
+  }
+  .item__right .item__price {
+    justify-self: flex-end;
+    margin: 0;
+  }
+  .item__right .item__price-inner {
+    flex-direction: column;
+  }
+  .item__right .item__price-left .price__value {
+    font-weight: 600;
+    font-size: 32px;
+  }
+  .item__right .item__price-left .price__value span {
+    font-size: 16px;
+  }
 }
 @media (max-width: 767px) {
   /* header */
@@ -2409,6 +2461,10 @@ body._pc .nav__link:hover {
   .popular__items .popular__item .nft-card-slim__title {
     font-size: 16px;
   }
+  /* item.html */
+  .item__right .item__name {
+    font-size: 24px;
+  }
 }
 @media (max-width: 600px) {
   .triple__inner .triple__item .nft-card-slim__title {
@@ -2428,6 +2484,57 @@ body._pc .nav__link:hover {
   }
   .popular__items .popular__item:last-child {
     margin-bottom: 0;
+  }
+  /* item.html */
+  .item {
+    max-height: none;
+    margin-top: 80px;
+  }
+  .item__inner {
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+  }
+  .item__inner .item__left {
+    width: 100%;
+  }
+  .item__inner .item__left .item__img {
+    margin-bottom: 30px;
+  }
+  .item__inner .item__left .item__graph {
+    display: none;
+  }
+  .item__inner .item__right {
+    width: 100%;
+  }
+  .item__inner .item__right .item__info {
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    gap: 50px;
+    margin-bottom: 30px;
+  }
+  .item__inner .item__right .item__info .info__inner._1 {
+    margin-right: 0;
+  }
+  .item__inner .item__right .item__price {
+    padding: 20px;
+    margin-bottom: 30px;
+  }
+  .item__inner .item__right .item__price .item__price-inner {
+    flex-direction: row;
+    justify-content: initial;
+  }
+  .item__inner .item__right .item__price .item__price-inner .item__price-right {
+    width: 50%;
+  }
+  .item__inner .item__right .item__graph {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .item__inner .item__right .item__graph .graph__img {
+    margin: 0;
   }
 }
 @media (max-width: 480px) {
@@ -2555,6 +2662,18 @@ body._pc .nav__link:hover {
   .footer__inner {
     margin-bottom: 25px;
   }
+  /* item.html */
+  .item__inner .item__right .item__info {
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  .item__inner .item__right .item__price .item__price-inner .price__value {
+    font-size: 16px;
+  }
+  .item__inner .item__right .item__price .item__price-inner .time__value {
+    font-size: 16px;
+  }
 }
 @media (max-width: 330px) {
   .intro__main-text {
@@ -2573,5 +2692,10 @@ body._pc .nav__link:hover {
   .intro__partner img {
     height: 25px;
     width: 65px;
+  }
+  .item__inner .item__right .item__price .item__price-inner {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
   }
 }

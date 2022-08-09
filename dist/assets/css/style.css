@@ -520,6 +520,11 @@ body.light .item__price {
     border: 0;
 }
 
+body.light .item__graph .graph__img {
+    background: url(../images/item/graph.png) center no-repeat;
+    background-size: contain;
+}
+
 body._pc.light .nav__link:hover {
     color: black;
 }
@@ -2063,8 +2068,8 @@ body._pc .nav__link:hover {
 }
 
 .item {
-    margin-top: 127px;
-    height: 100vh;
+    margin: 127px 0 0 0;
+    max-height: 1123px;
 }
 
 .item__graph p, .item__price p, .info__inner p, .item__right .item__descript {
@@ -2099,7 +2104,7 @@ body._pc .nav__link:hover {
 .item__left .item__img {
     max-width: 684px;
     width: 100%;
-    height: 100%;
+    height: auto;
     border-radius: 20px;
 }
 
@@ -2225,10 +2230,11 @@ body._pc .nav__link:hover {
 
 .item__graph .graph__img {
     width: 100%;
-    height: auto;
+    height: 227px;
     max-height: 185px;
     background: url(../images/item/graph_dark.png) center no-repeat;
     background-size: contain;
+    margin-bottom: 65px;
 }
 
 @media (max-width: 1500px) {
@@ -2337,6 +2343,10 @@ body._pc .nav__link:hover {
         width: 60px;
         height: 60px;
         margin-top: 2%;
+    }
+
+    .item__right {
+        padding-right: 0;
     }
 }
 
