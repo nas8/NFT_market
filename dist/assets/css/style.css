@@ -3234,7 +3234,6 @@ body._pc .nav__link:hover {
 
     .triple__inner .triple__item {
         text-align: center;
-        height: auto;
     }
 
     .triple__inner .triple__item .triple__title {
@@ -3264,7 +3263,7 @@ body._pc .nav__link:hover {
     }
 
     .triple__inner .triple__hand-img {
-        max-width: 200px;
+        max-width: 300px;
     }
 
     .triple__inner .triple__elem:last-child {
