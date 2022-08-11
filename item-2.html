@@ -49,8 +49,11 @@
                         </li>
         
                         <div class="top-bar__right-btns two-btns">
-                            <a class="btn btn_transparent btn_size_s" href="">Contact</a>
-                            <a class="btn btn_blue" href="">My Account</a>
+        
+                            <button class="btn btn_transparent btn_size_s" type="button" data-modal="data-contact">Contact</button>
+        
+                            <button class="btn btn_blue" type="button" data-modal="data-login">My Account</button>
+        
                         </div>
                     </ul>
         
@@ -61,8 +64,11 @@
                     <div class="btn-mode"></div>
         
                     <div class="top-bar__right-btns two-btns">
-                        <a class="btn btn_transparent btn_size_s" href="">Contact</a>
-                        <a class="btn btn_blue" href="">My Account</a>
+        
+                        <button class="btn btn_transparent btn_size_s" type="button" data-modal="data-contact">Contact</button>
+        
+                        <button class="btn btn_blue" type="button" data-modal="data-login">My Account</button>
+        
                     </div>
         
                     <div class="burger__container">
@@ -402,6 +408,61 @@
         </footer>
     </div>
 
+    <div class="modal" id="modal-contact">
+        <div class="modal__inner">
+            <button class="modal__close">
+                <img class="modal__img svg" src="../assets/images/modal/close.svg" alt="close">
+            </button>
+    
+            <form class="form" action="/" method="post">
+                <div class="form__group">
+                    <input class="form__control" type="text" placeholder="Name">
+                </div>
+    
+                <div class="form__group">
+                    <input class="form__control" type="email" placeholder="E-mail">
+                </div>
+    
+                <div class="form__group">
+                    <textarea class="form__control  form__control_textarea" placeholder="Text"></textarea>
+                </div>
+    
+                <div class="form__footer">
+                    <div class="form__group">
+                        <button class="btn  btn_blue" type="submit">Submit</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>    <div class="modal modal-login" id="modal-login">
+        <div class="modal__inner">
+            <button class="modal__close">
+                <img class="modal__img svg" src="../assets/images/modal/close.svg" alt="close">
+            </button>
+    
+            <form class="form" action="/" method="post">
+                <div class="form__group">
+                    <input class="form__control" type="text" placeholder="Login">
+                </div>
+    
+                <div class="form__group">
+                    <input class="form__control" type="email" placeholder="Password">
+                </div>
+    
+                <div class="form__footer">
+                    <div class="form__group">
+                        <button class="btn  btn_blue" type="submit">Log In</button>
+                    </div>
+                </div>
+    
+                <div class="form__registration">
+                    <p>Don't have an account yet?&nbsp</p>
+                    <a href="#">Create an account.</a>
+                </div>
+    
+            </form>
+        </div>
+    </div>
     <script src="assets/js/app.js"></script>
 </body>
 </html>
