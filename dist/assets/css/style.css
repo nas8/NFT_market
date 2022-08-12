@@ -544,6 +544,10 @@ body.light .form__control {
     color: black;
 }
 
+body.light .form__control:focus {
+    border: 1px solid rgb(0, 0, 0);
+}
+
 body._pc.light .nav__link:hover {
     color: black;
 }
@@ -840,7 +844,7 @@ body._pc .nav__link:hover {
     width: 100%;
     height: 100vh;
     max-height: 1191px;
-    min-height: 700px;
+    min-height: 500px;
     background: #060714 url(../images/intro-background.png) center no-repeat;
     background-size: cover;
 }
@@ -2124,6 +2128,7 @@ body._pc .nav__link:hover {
     position: relative;
     -webkit-transform: translateY(-50px);
     transform: translateY(-50px);
+    opacity: 0;
     transition: opacity 200ms ease-in-out, -webkit-transform 200ms ease-in-out;
     transition: transform 200ms ease-in-out, opacity 200ms ease-in-out;
     transition: transform 200ms ease-in-out, opacity 200ms ease-in-out, -webkit-transform 200ms ease-in-out;
@@ -2202,6 +2207,10 @@ body._pc .nav__link:hover {
     color: rgba(119, 128, 161, 0.7);
 }
 
+.form__control:focus {
+    border: 1px solid rgb(255, 255, 255);
+}
+
 .form__footer {
     display: -ms-flexbox;
     display: flex;
@@ -2247,6 +2256,15 @@ body._pc .nav__link:hover {
     width: 100%;
     -ms-flex-pack: center;
     justify-content: center;
+}
+
+.form__registration a {
+    color: coral;
+    text-decoration: none;
+}
+
+.form__registration a:hover {
+    text-decoration: underline;
 }
 
 .item {
@@ -3220,9 +3238,14 @@ body._pc .nav__link:hover {
     .item__right .item__name {
         font-size: 24px;
     }
+  /* modal windows */
+    .form {
+        min-width: 300px;
+    }
 }
 
 @media (max-width: 600px) {
+  /* Triple */
     .triple__inner .triple__item .nft-card-slim__title {
         font-size: 12px;
     }
@@ -3326,7 +3349,7 @@ body._pc .nav__link:hover {
 
     .into__overtitle {
         position: absolute;
-        top: 27%;
+        bottom: 67%;
     }
 
     .intro__undertitle {
@@ -3514,9 +3537,28 @@ body._pc .nav__link:hover {
     .item__inner .item__right .item__price .item__price-inner .time__value {
         font-size: 16px;
     }
+  /* Modal windows */
+    .modal__inner {
+        padding: 50px 30px 30px 30px;
+        border-radius: 10px;
+    }
+
+    .form {
+        min-width: 250px;
+    }
+
+    .modal__close {
+        top: 2.5%;
+        right: 2.5%;
+    }
+
+    .form__registration {
+        font-size: 10px;
+    }
 }
 
 @media (max-width: 330px) {
+  /* Intro */
     .intro__main-text {
         -webkit-transform: scale(0.3);
         transform: scale(0.3);
@@ -3560,12 +3602,16 @@ body._pc .nav__link:hover {
     .intro__nft-block {
         gap: 5px;
     }
-
+  /* Item */
     .item__inner .item__right .item__price .item__price-inner {
         -ms-flex-direction: column;
         flex-direction: column;
         -ms-flex-align: center;
         align-items: center;
         gap: 30px;
+    }
+  /* Modal Windows */
+    .form {
+        min-width: 220px;
     }
 }
