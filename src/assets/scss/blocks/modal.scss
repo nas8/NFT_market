@@ -33,6 +33,7 @@
     position: relative;
 
     transform: translateY(-50px);
+    opacity: 0;
     transition: transform 200ms ease-in-out, opacity 200ms ease-in-out;
 }
 
@@ -92,9 +93,9 @@
         color: rgba($color: $grey, $alpha: 0.7);
     }
 
-    // &:focus{
-    //     border: 1.5px solid black;
-    // }
+    &:focus{
+        border: 1px solid rgb(255, 255, 255);
+    }
 }
 
 .form__footer {
@@ -125,6 +126,11 @@
     color: $grey;
     width: 100%;
     justify-content: center;
+
+    a {
+        color: coral;
+        text-decoration: none;
+    }
 }
 
 

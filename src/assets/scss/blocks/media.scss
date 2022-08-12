@@ -842,9 +842,16 @@
         }
     }
 
+    /* modal windows */
+
+    .form {
+        min-width: 300px;
+    }
+
 }
 
 @media (max-width: 600px) {
+    /* Triple */
 
     .triple__inner {
         .triple__item {
@@ -1146,9 +1153,32 @@
             }
         }
     }
+
+    /* Modal windows */
+
+    .modal__inner {
+        padding: 50px 30px 30px 30px;
+        border-radius: 10px;
+    }
+
+    .form {
+        min-width: 250px;
+    }
+
+    .modal__close {
+        top: 2.5%;
+        right: 2.5%;
+    }
+
+    .form__registration {
+        font-size: 10px;
+    }
 }
 
 @media (max-width: 330px) {
+
+    /* Intro */
+
     .intro__main-text {
         transform: scale(0.3);
     }
@@ -1176,11 +1206,18 @@
 
     }
 
+    /* Item */
 
     .item__inner .item__right .item__price .item__price-inner {
         flex-direction: column;
         align-items: center;
         gap: 30px
+    }
 
+
+    /* Modal Windows */
+
+    .form {
+        min-width: 220px;
     }
 }
