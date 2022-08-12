@@ -755,7 +755,7 @@ body._pc .nav__link:hover {
   width: 100%;
   height: 100vh;
   max-height: 1191px;
-  min-height: 700px;
+  min-height: 600px;
   background: #060714 url(../images/intro-background.png) center no-repeat;
   background-size: cover;
 }
@@ -1883,6 +1883,9 @@ body._pc .nav__link:hover {
 .form__registration a {
   color: coral;
   text-decoration: none;
+}
+.form__registration a:hover {
+  text-decoration: underline;
 }
 
 .item {
