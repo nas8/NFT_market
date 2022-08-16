@@ -107,6 +107,7 @@
 
     .nft-card__heart-icon {
         margin-right: 8px;
+        cursor: pointer;
     }
 }
 
@@ -156,5 +157,6 @@
 
 .nft-card-slim__bidding {
     display: flex;
+    align-items: center;
     justify-content: space-between;
 }

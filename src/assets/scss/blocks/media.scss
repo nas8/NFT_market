@@ -113,6 +113,12 @@
         margin-top: 2%;
     }
 
+    /* Popular*/
+
+    .nft-card__text {
+        font-size: 12px;
+    }
+
 
     /* Item.html */
     .item {
@@ -779,10 +785,13 @@
     /* Triple */
 
     .triple__inner {
+        justify-content: center;
+
         .triple__item {
             width: 100%;
             margin-right: 0;
             margin-bottom: 60px;
+            max-width: 448px;
         }
 
         .triple__item_backg_grad {
@@ -808,6 +817,7 @@
             width: 100%;
         }
     }
+
 
     /* Get-Started #2 */
     .get-started__elem {
@@ -952,6 +962,10 @@
                 }
             }
 
+            .info__descript {
+                text-align: left;
+            }
+
         }
     }
 }
@@ -1014,6 +1028,17 @@
     .latest-auct__title {
         font-size: 30px;
         line-height: 125%;
+    }
+
+    .swiper-latest-auct {
+        .swiper-button-next {
+            width: 80px;
+            height: 80px;
+
+            top: -62%;
+            left: 78.5%;
+        }
+
     }
 
 
@@ -1173,6 +1198,7 @@
     .form__registration {
         font-size: 10px;
     }
+
 }
 
 @media (max-width: 330px) {

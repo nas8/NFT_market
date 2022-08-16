@@ -38,7 +38,6 @@ body {
 }
 
 //blocks
-@import "blocks/mode.scss";
 @import "blocks/nft-icon.scss";
 @import "blocks/header.scss";
 @import "blocks/buttons.scss";
@@ -54,8 +53,8 @@ body {
 @import "blocks/footer.scss";
 @import "blocks/modal.scss";
 @import "blocks/item.scss";
-
-
+@import '../../../node_modules/swiper/swiper.scss';
+@import "blocks/mode.scss";
 
 @import "blocks/media.scss";
 

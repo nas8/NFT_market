@@ -120,7 +120,8 @@ body.light {
     //changing color of svg in light mode with tag img via svg.js script
     .nft-card__time-icon.svg path,
     .get-started__pic.svg path,
-    .counters__icon.svg path {
+    .counters__icon.svg path,
+    .swiper-button-next svg path {
         fill: #000000;
     }
 
@@ -165,6 +166,12 @@ body.light {
         }
     }
 
+     /* Swiper */
+    .swiper-button-next {
+        background: rgba(255, 255, 255, 0.8);
+        box-shadow: 0px 25px 75px rgba(6, 7, 20, 0.1);
+        backdrop-filter: blur(7px);
+    }
 }
 
 
