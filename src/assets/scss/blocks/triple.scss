@@ -158,7 +158,18 @@
     height: auto;
 
     border-radius: 20px;
+
+    transition: transform 0.1s linear;
 }
+
+body._pc {
+
+    .triple__icon:hover {
+        transform: scale(1.1);
+    }
+
+}
+
 
 
 .triple__nft-data_item_3 {

@@ -4,7 +4,19 @@
     height: auto;
     border-radius: 20px;
     margin-bottom: 24px;
+
+    transition: transform 0.1s linear;
 }
+
+body._pc {
+    .nft-card__link:hover {
+        .nft-card__image {
+            transform: scale(1.05);
+        }
+
+    }
+}
+
 
 .nft-card__title {
     width: 70%;

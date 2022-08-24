@@ -36,6 +36,18 @@
     border-radius: 20px
 }
 
+
+.latest-auct__image {
+    transition: transform 0.1s linear;
+}
+
+body._pc {
+    .latest-auct__image:hover {
+        transform: scale(1.03);
+    }
+}
+
+
 .latest-auct__item:last-child {
     margin-right: 0;
 }

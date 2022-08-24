@@ -265,6 +265,18 @@
         }
     }
 
+    body._pc.light {
+        .nav__link:hover {
+            color: $white;
+        }
+    }
+
+    body._pc {
+        .nav__link:hover {
+            color: black;
+        }
+    }
+
     .top-bar__nav._active {
         top: 0;
     }
@@ -423,6 +435,10 @@
     .intro__search {
         transform: scale(0.8);
         font-size: 20px;
+    }
+
+    .intro__partners {
+        bottom: -25%;
     }
 
     .intro__partner {
@@ -1022,7 +1038,13 @@
     /* Latest auct */
 
     .latest-auct__inner {
-        padding: 50px 0px;
+        padding: 50px 15px;
+
+        .nft-card__time {
+            padding-bottom: 5px;
+            margin-bottom: 5px;
+        }
+
     }
 
     .latest-auct__title {
@@ -1038,8 +1060,10 @@
             top: -62%;
             left: 78.5%;
         }
-
     }
+
+
+
 
 
     /* Get-Started #1 */
@@ -1191,8 +1215,8 @@
     }
 
     .modal__close {
-        top: 2.5%;
-        right: 2.5%;
+        top: 4%;
+        right: 4%;
     }
 
     .form__registration {
