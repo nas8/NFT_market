@@ -376,7 +376,7 @@ body.light {
     color: black;
 }
 
-body.touch {
+body._touch {
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
@@ -412,7 +412,7 @@ body.touch {
     transition: box-shadow 0.1s linear;
 }
 
-.nft .nft__image:hover {
+.nft body._pc .nft__image:hover {
     -webkit-transform: scale(1.05);
     transform: scale(1.05);
     box-shadow: 0px 10px 20px 0px rgba(209, 209, 209, 0.2);
@@ -680,7 +680,7 @@ body._pc .nav__link:hover {
     width: 100%;
     height: 100vh;
     max-height: 1191px;
-    min-height: 600px;
+    min-height: 750px;
     background: #060714 url(../images/intro-background.png) center no-repeat;
     background-size: cover;
 }
@@ -875,8 +875,8 @@ body._pc .nav__link:hover {
     display: flex;
     -ms-flex-direction: row;
     flex-direction: row;
-    position: absolute;
-    bottom: 7%;
+    position: relative;
+    bottom: -15%;
 }
 
 .intro__partner {
@@ -995,6 +995,17 @@ body._pc .nav__link:hover {
     border-radius: 20px;
 }
 
+.latest-auct__image {
+    transition: -webkit-transform 0.1s linear;
+    transition: transform 0.1s linear;
+    transition: transform 0.1s linear, -webkit-transform 0.1s linear;
+}
+
+body._pc .latest-auct__image:hover {
+    -webkit-transform: scale(1.03);
+    transform: scale(1.03);
+}
+
 .latest-auct__item:last-child {
     margin-right: 0;
 }
@@ -1051,6 +1062,14 @@ body._pc .nav__link:hover {
     height: auto;
     border-radius: 20px;
     margin-bottom: 24px;
+    transition: -webkit-transform 0.1s linear;
+    transition: transform 0.1s linear;
+    transition: transform 0.1s linear, -webkit-transform 0.1s linear;
+}
+
+body._pc .nft-card__link:hover .nft-card__image {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
 }
 
 .nft-card__title {
@@ -1480,6 +1499,14 @@ body._pc .nav__link:hover {
     width: 100%;
     height: auto;
     border-radius: 20px;
+    transition: -webkit-transform 0.1s linear;
+    transition: transform 0.1s linear;
+    transition: transform 0.1s linear, -webkit-transform 0.1s linear;
+}
+
+body._pc .triple__icon:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 .triple__nft-data_item_3 {
@@ -2732,7 +2759,7 @@ body.light .swiper-button-next {
 }
 
 body._pc.light .nav__link:hover {
-    color: black;
+    color: rgb(0, 0, 0);
 }
 
 body._pc.light .btn_transparent:hover {
@@ -2986,6 +3013,14 @@ body._pc.light .btn_transparent:hover {
         background-color: white;
     }
 
+    body._pc.light .nav__link:hover {
+        color: white;
+    }
+
+    body._pc .nav__link:hover {
+        color: black;
+    }
+
     .top-bar__nav._active {
         top: 0;
     }
@@ -3139,6 +3174,10 @@ body._pc.light .btn_transparent:hover {
         -webkit-transform: scale(0.8);
         transform: scale(0.8);
         font-size: 20px;
+    }
+
+    .intro__partners {
+        bottom: -25%;
     }
 
     .intro__partner {
@@ -3719,7 +3758,12 @@ body._pc.light .btn_transparent:hover {
     }
   /* Latest auct */
     .latest-auct__inner {
-        padding: 50px 0px;
+        padding: 50px 15px;
+    }
+
+    .latest-auct__inner .nft-card__time {
+        padding-bottom: 5px;
+        margin-bottom: 5px;
     }
 
     .latest-auct__title {
@@ -3868,8 +3912,8 @@ body._pc.light .btn_transparent:hover {
     }
 
     .modal__close {
-        top: 2.5%;
-        right: 2.5%;
+        top: 4%;
+        right: 4%;
     }
 
     .form__registration {
