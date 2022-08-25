@@ -31,6 +31,7 @@ let isMobile = {
 
 
 if(path === '/') {
+    console.log(1);
     if(isMobile.any()) {
         window.addEventListener('resize', () => {
             intro.style.height = `${document.documentElement.clientHeight}px`;
