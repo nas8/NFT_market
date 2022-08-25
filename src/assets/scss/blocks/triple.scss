@@ -138,9 +138,12 @@
     height: 100%;
     max-height: 120px;
     max-width: none;
-
-
     margin-bottom: 16px;
+
+
+    a {
+        margin-right: 10px;
+    }
 }
 
 .triple_elem-data {
@@ -169,8 +172,6 @@ body._pc {
     }
 
 }
-
-
 
 .triple__nft-data_item_3 {
     padding: 8px 0;

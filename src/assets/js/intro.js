@@ -1,7 +1,7 @@
 const intro = document.querySelector('.intro')
 
 let path = window.location.pathname;
-let page = path.split("/").pop();
+// let page = path.split("/").pop();
 let isMobile = {
     Android: function () {
         return navigator.userAgent.match(/Android/i);
@@ -30,7 +30,7 @@ let isMobile = {
 };
 
 
-if(page === '/') {
+if(path === '/') {
     if(isMobile.any()) {
         window.addEventListener('resize', () => {
             intro.style.height = `${document.documentElement.clientHeight}px`;
