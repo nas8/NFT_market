@@ -2259,7 +2259,9 @@ body._pc .triple__icon:hover {
 }
 
 .item__left .item__img {
+    display: block;
     max-width: 684px;
+    max-height: 858px;
     width: 100%;
     height: auto;
     border-radius: 20px;
